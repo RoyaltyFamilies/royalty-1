@@ -121,19 +121,17 @@ body {
 /* ===== HEADER COM EFEITO BLUR - MODELO FINAL ===== */
 
 header {
-    background: linear-gradient(135deg, #FFFFFF 0%, #F8F9FB 50%, #F3F5FA 100%) !important;
+    background: rgba(255, 255, 255, 0.98) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
     padding: 12px 15px !important;
-    box-shadow: 
-        0 20px 60px rgba(20, 33, 77, 0.3),
-        0 0 40px rgba(212, 175, 55, 0.2),
-        inset 0 1px 0 rgba(255, 255, 255, 0.95),
-        inset 0 -2px 4px rgba(20, 33, 77, 0.08) !important;
+    box-shadow: var(--sombra-forte) !important;
     position: fixed !important;
     top: 0 !important;
     left: 0 !important;
     right: 0 !important;
     z-index: 999999 !important;
-    border-bottom: 3px solid rgba(212, 175, 55, 0.4) !important;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2) !important;
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
