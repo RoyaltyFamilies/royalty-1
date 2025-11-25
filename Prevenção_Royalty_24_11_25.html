@@ -121,17 +121,17 @@ body {
 /* ===== HEADER COM EFEITO BLUR - MODELO FINAL ===== */
 
 header {
-    background: rgba(255, 255, 255, 0.95) !important;
-    backdrop-filter: blur(10px) !important;
-    -webkit-backdrop-filter: blur(10px) !important;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.95) 100%) !important;
+    backdrop-filter: blur(12px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(12px) saturate(180%) !important;
     padding: 12px 15px !important;
-    box-shadow: var(--sombra-forte) !important;
+    box-shadow: 0 8px 32px rgba(20, 33, 77, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.6) !important;
     position: fixed !important;
     top: 0 !important;
     left: 0 !important;
     right: 0 !important;
     z-index: 999999 !important;
-    border-bottom: 1px solid rgba(212, 175, 55, 0.2) !important;
+    border-bottom: 2px solid rgba(184, 134, 11, 0.15) !important;
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
@@ -1922,9 +1922,10 @@ td select {
 /* Tabela Plano de Ação - Coluna Passo */
 #tabela-plano-acao tbody td:first-child,
 #tabela-plano-acao thead th:first-child {
-    width: 8%;
+    width: 10%;
+    min-width: 60px;
     text-align: center;
-    padding: 16px 12px;
+    padding: 16px 8px;
 }
 
 #tabela-plano-acao tbody td:first-child {
@@ -1940,15 +1941,17 @@ td select {
 /* Tabela Plano de Ação - Coluna Ação (centro) */
 #tabela-plano-acao tbody td:nth-child(2),
 #tabela-plano-acao thead th:nth-child(2) {
-    text-align: center;
-    padding: 12px 16px;
-    width: 72%;
+    text-align: left;
+    padding: 12px 12px;
+    width: 60%;
+    min-width: 200px;
     word-wrap: break-word;
     overflow-wrap: break-word;
 }
 
 #tabela-plano-acao tbody td:nth-child(2) textarea {
     width: 100%;
+    max-width: 100%;
     padding: 10px;
     border: 1px solid #d4af37;
     border-radius: 6px;
@@ -1957,19 +1960,21 @@ td select {
     font-size: 0.95rem;
     line-height: 1.4;
     font-family: 'Montserrat', sans-serif;
+    min-height: 100px;
 }
 
 /* Tabela Plano de Ação - Coluna data (última) */
 #tabela-plano-acao tbody td:last-child,
 #tabela-plano-acao thead th:last-child {
-    width: 20%;
+    width: 30%;
+    min-width: 140px;
     text-align: center;
-    padding: 12px 16px;
+    padding: 12px 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 6px;
+    gap: 4px;
 }
 
 #tabela-plano-acao tbody td:last-child input[type="date"] {
