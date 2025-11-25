@@ -1,0 +1,3205 @@
+Attached HTML and CSS Context
+
+<body>
+    <!-- HEADER PREMIUM COM BLUR -->
+    <header>
+        <!-- Lado Esquerdo com Logo e Texto -->
+        <div class="header-left-blur">
+            <div class="logo-box">R</div>
+            <div class="header-texts">
+                <div class="header-main-title">PREVENÇÃO ROYALTY</div>
+                <div class="header-subtitle">PELO BEM-ESTAR DE TODA FAMÍLIA</div>
+            </div>
+        </div>
+
+        <!-- BARRA DE PROGRESSO CENTRALIZADA -->
+        <div class="progress-container">
+            <div class="progress-label" id="progressLabel" data-percentage="100%">Seu Progresso</div>
+            <div class="progress-bar-wrapper">
+                <div class="progress-bar" id="progressBar" style="width: 100%;"></div>
+            </div>
+            <div class="progress-steps" id="progressoSteps"><div class="progress-step active completed" id="step1" role="button" aria-label="Etapa 1 de 8" tabindex="0">1</div><div class="progress-step completed" id="step2" role="button" aria-label="Etapa 2 de 8" tabindex="0">2</div><div class="progress-step completed" id="step3" role="button" aria-label="Etapa 3 de 8" tabindex="0">3</div><div class="progress-step completed" id="step4" role="button" aria-label="Etapa 4 de 8" tabindex="0">4</div><div class="progress-step completed" id="step5" role="button" aria-label="Etapa 5 de 8" tabindex="0">5</div><div class="progress-step completed" id="step6" role="button" aria-label="Etapa 6 de 8" tabindex="0">6</div><div class="progress-step completed" id="step7" role="button" aria-label="Etapa 7 de 8" tabindex="0">7</div><div class="progress-step completed" id="step8" role="button" aria-label="Etapa 8 de 8" tabindex="0">8</div></div>
+        </div>
+
+        <!-- Lado Direito com Pontuação e Botão Reset -->
+        <div class="header-right-blur">
+            <div class="header-stat">
+                <div class="stat-number" id="headerPontuacao">80</div>
+                <div class="stat-label">PONTUAÇÃO</div>
+            </div>
+            <!-- Botão Reset -->
+            <button class="btn-reset" onclick="resetarProgresso()" title="Resetar progresso e começar novamente">
+                <span class="reset-icon">↻</span> <span class="reset-text">Reiniciar</span>
+            </button>
+        </div>
+    
+    </header>
+
+    <div class="container">
+        <!-- ===================================
+             PÁGINA 1: CONSENTIMENTO E INFORMAÇÕES
+             =================================== -->
+        <div class="pagina ativa" id="pagina1">
+            <h2 class="pagina-titulo">📋 Consentimento e Informações Importantes</h2>
+
+            <div class="card warning">
+                <strong>⚖️ INFORMAÇÕES LEGAIS IMPORTANTES</strong>
+                <p style="margin-top: 10px;text-align: justify;">Este material é <strong>psicoeducativo e complementar</strong>, não substitui tratamento profissional. Ele foi desenvolvido especificamente para você <strong>após a conclusão bem-sucedida de sua psicoterapia ou de nosso curso Psicoeducativo</strong>, quando seus sintomas estão em níveis normais da população geral sem diagnóstico em saúde mental. Ele serve como <strong>ferramenta de automonitoramento, manutenção de ganhos terapêuticos e promoção da saúde</strong>.</p>
+            </div>
+
+            <div class="card">
+                <strong>📊 Proteção de Dados</strong>
+                <p style="margin-top: 10px;text-align: justify;">Seus dados são protegidos conforme <strong>LGPD, GDPR e CCPA</strong>. Utilizamos criptografia em repouso, sigilo profissional absoluto e NÃO compartilhamos informações com terceiros sem seu consentimento explícito.</p>
+                <p style="margin-top: 12px; font-size: 0.9rem;">📧 <strong>Contato:</strong> psicologoluisbernardo@gmail.com</p>
+            </div>
+
+            <div class="card">
+                <strong>🔐 Seus Direitos</strong>
+                <p style="margin-top: 10px;">Você tem direito de:</p>
+                <ul style="margin-top: 8px; margin-left: 20px;">
+                    <li>Acessar todos os seus dados a qualquer momento</li>
+                    <li>Corrigir informações incorretas</li>
+                    <li>Deletar seus dados (direito ao esquecimento)</li>
+                    <li>Revogar seu consentimento a qualquer momento</li>
+                </ul>
+            </div>
+
+            <div class="alerta alerta-aviso">
+                <span class="alerta-icone">⚠️</span>
+                <div>
+                    <strong>Obrigatório:</strong> Você deve concordar com TODOS os itens para continuar.<br>
+                    <strong>Confidencialidade garantida:</strong> Seus dados são protegidos por sigilo profissional e legislação de privacidade.
+                </div>
+            </div>
+
+            <h3>🔐 Consentimento de Coleta de Dados e Limitações Deste Serviço</h3>
+    
+            <div class="checkbox-group">
+                <div class="checkbox-item">
+                    <input type="checkbox" id="consentimento1" required="">
+                    <label for="consentimento1">
+                        Compreendo que este é um material <strong>psicoeducativo para promoção da saúde mental, prevenção de agravos</strong> e <strong>não substitui acompanhamento profissional</strong> para tratamento de sintomas graves.
+                        Em caso de <strong>🚨 Emergência ou Crise </strong> posso ligar para: <br>CVV 188 (24h) | 190/192 (Brasil) | 988 (EUA) | 116 123 (UK) 112 | (Europa)
+                    </label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="consentimento2" required="">
+                    <label for="consentimento2">
+                        Ao preencher todos os formulários deste material utorizo a coleta, armazenamento e processamento de meus dados pessoais e dados de saúde mental conforme a <a href="https://www.royaltyfamilies.com/privacidade" target="_blank" style="color:#003366; font-weight:bold;"><strong>Política de Privacidade</strong></a> deste site, <strong>LGPD, GDPR e CCPA</strong>.
+                    </label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="consentimento3" required="">
+                    <label for="consentimento3">
+                        Concordo em utilizar este guia como <strong>ferramenta complementar de autocuidado e prevenção</strong>, de forma responsável, segura e reconheço limitações deste serviço conforme li na <a href="https://www.royaltyfamilies.com/isencao" target="_blank" style="color:#003366; font-weight:bold;"><strong>Declaração de Isenção</strong></a> deste site.
+                    </label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="consentimento4" required="">
+                    <label for="consentimento4">
+                        Compreendo e concordo que meus dados possam ser utilizados de forma <strong>anonimizada</strong> para melhorias do serviço e pesquisas científicas.
+                    </label>
+                </div>
+            </div>
+
+           
+
+            <div class="botoes-navegacao">
+                <button class="btn btn-primario" onclick="avancarPagina(1)">Começar →</button>
+            </div>
+        </div>
+
+        <!-- ===================================
+             PÁGINA 2: DADOS PESSOAIS
+             =================================== -->
+        <div class="pagina" id="pagina2">
+            <h2 class="pagina-titulo">👤 1. Seus Dados Pessoais</h2>
+            <p class="pagina-descricao">Por favor, preencha suas informações para personalizar sua experiência.</p>
+
+            <!-- Linha 1: Nome Completo (linha inteira) -->
+            <div class="form-group form-full-width">
+                <label for="nomeCompleto">Nome Completo <span class="obrigatorio">*</span></label>
+                <input type="text" id="nomeCompleto" name="nomeCompleto" required="" placeholder="Digite seu nome completo">
+            </div>
+
+            <!-- Linha 2: Email (flex 1) e Telefone (flex 1) - Proporcionais -->
+            <div class="form-row-flex">
+                <div class="form-group flex-1">
+                    <label for="email">Email <span class="obrigatorio">*</span></label>
+                    <input type="email" id="email" name="email" required="" placeholder="seu@email.com">
+                </div>
+                <div class="form-group flex-1">
+                    <label for="telefone">Telefone/WhatsApp <span class="obrigatorio">*</span></label>
+                    <input type="tel" id="telefone" name="telefone" required="" placeholder="(00) 00000-0000">
+                </div>
+            </div>
+
+            <!-- Linha 3: Data de Nascimento (flex-fixed) + Idade Automática (flex-fixed) + Profissão (flex-1) -->
+            <div class="form-row-flex">
+                <div class="form-group flex-fixed">
+                    <label for="dataNascimento">Data de Nascimento</label>
+                    <input type="date" id="dataNascimento" name="dataNascimento" onchange="calcularIdade()">
+                </div>
+                <div class="form-group flex-fixed">
+                    <label for="idade">Idade</label>
+                    <input type="number" id="idade" name="idade" readonly="" placeholder="Calculada automaticamente" style="background-color: #f5f5f5; cursor: not-allowed;">
+                </div>
+                <div class="form-group flex-1">
+                    <label for="profissao">Profissão</label>
+                    <input type="text" id="profissao" name="profissao" placeholder="Sua profissão">
+                </div>
+            </div>
+
+            <!-- Linha 4: Diagnóstico/Condição (linha inteira) -->
+            <div class="form-group form-full-width">
+                <label for="diagnostico">Diagnóstico/Condição <span class="obrigatorio">*</span></label>
+                <input type="text" id="diagnostico" name="diagnostico" required="" placeholder="Qual é o diagnóstico ou condição?">
+            </div>
+
+            <!-- Linha 5: Data de Alta Terapêutica (flex-fixed) e Terapeuta (flex-1) -->
+            <div class="form-row-flex">
+                <div class="form-group flex-1">
+                    <label for="dataAlta">Data de Alta Terapêutica <span class="obrigatorio">*</span></label>
+                    <input type="date" id="dataAlta" name="dataAlta" required="">
+                </div>
+                <div class="form-group flex-1">
+                    <label for="terapeuta">Terapeuta Responsável <span class="obrigatorio">*</span></label>
+                    <input type="text" id="terapeuta" name="terapeuta" required="" placeholder="Nome do terapeuta">
+                </div>
+            </div>
+
+             <div class="card">
+                <strong>Instruções de Uso:</strong><br>
+                
+                    ➡️ Faça esta atividade até <strong>uma vez por semana</strong>, em momento tranquilo (15-20 minutos)<br>
+                    ➡️ Mas, lembre-se: não substitui acompanhamento profissional se sintomas retornarem<br>
+                    ➡️ Ao clicar em "Finalizar" uma cópia das suas respostas irá para nosso banco de dados<br>
+                    ➡️ Clique em "Imprimir" ou "Salvar Dados" para guardar sua cópia<br>
+                    ➡️ Guarde suas cópias para lhe ajudar a lembrar dos seus Planos de Ação e reflexão<br>
+            </div>
+
+            <div class="premio-container" id="premio2">
+                <div class="premio-icone">🎗️</div>
+                <div class="premio-texto">✅ Dados Pessoais Registrados!</div>
+                <div class="premio-pontos">+10 Pontos</div>
+            </div>
+
+            <div class="botoes-navegacao">
+                <button class="btn btn-secundario" onclick="voltarPagina(2)">← Anterior</button>
+                <button class="btn btn-primario" onclick="avancarPagina(2)">Próximo →</button>
+            </div>
+        </div>
+<div class="pagina" id="pagina3">
+            <h2 class="pagina-titulo">🧘2. A Prática Diária de Mindfulness</h2>
+
+            <div class="card">
+                <strong>Fundamento Científico:</strong>
+                <p style="margin-top: 10px;">A Prevenção de Recaída Baseada em Mindfulness (MBRP) reduz risco de recaída em <strong>54% em estudos de 12 meses</strong><sup>[1,2,18]</sup>. Fortalece regulação emocional, tolerância ao desconforto e consciência de gatilhos<sup>[3]</sup>.</p>
+            </div>
+
+            <p class="pagina-descricao">Mindfulness é a prática de trazer sua atenção totalmente para o momento presente, sem julgamento de seus pensamentos e emoções. Isso ajuda a quebrar ciclos de pensamentos repetitivos que pode levar aos agravos em saúde mental<sup>[1,2,18]</sup>. Se preferir, você pode fazer uma prática de Mindfulness guiada ouvindo um áudio em nosso site na página <a href="https://www.royaltyfamilies.com/sala-vip" target="_blank" style="color:#003366; font-weight:bold;"><strong>"Sala VIP"</strong></a>.</p>
+
+            <div class="form-group">
+                <label for="horario_mindfulness">Horário ideal para praticar:</label>
+                <input type="time" id="horario_mindfulness" name="horario_mindfulness">
+            </div>
+
+            <h3 style="color: var(--primario-forte); margin: 28px 0 16px 0; font-size: 1.3rem; font-weight: 600;">Registro Semanal de Mindfulness</h3>
+            <div class="quadro-integrado">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dia</th>
+                            <th>Praticou?</th>
+                            <th>Duração (min)</th>
+                            <th>Qualidade (1-5)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Segunda-feira</td>
+                            <td><input type="checkbox" id="mindMonday"></td>
+                            <td><input type="number" id="mindMondayDur" min="0" max="120"></td>
+                            <td><input type="number" id="mindMondayQual" min="1" max="5"></td>
+                        </tr>
+                        <tr>
+                            <td>Terça-feira</td>
+                            <td><input type="checkbox" id="mindTuesday"></td>
+                            <td><input type="number" id="mindTuesdayDur" min="0" max="120"></td>
+                            <td><input type="number" id="mindTuesdayQual" min="1" max="5"></td>
+                        </tr>
+                        <tr>
+                            <td>Quarta-feira</td>
+                            <td><input type="checkbox" id="mindWednesday"></td>
+                            <td><input type="number" id="mindWednesdayDur" min="0" max="120"></td>
+                            <td><input type="number" id="mindWednesdayQual" min="1" max="5"></td>
+                        </tr>
+                        <tr>
+                            <td>Quinta-feira</td>
+                            <td><input type="checkbox" id="mindThursday"></td>
+                            <td><input type="number" id="mindThursdayDur" min="0" max="120"></td>
+                            <td><input type="number" id="mindThursdayQual" min="1" max="5"></td>
+                        </tr>
+                        <tr>
+                            <td>Sexta-feira</td>
+                            <td><input type="checkbox" id="mindFriday"></td>
+                            <td><input type="number" id="mindFridayDur" min="0" max="120"></td>
+                            <td><input type="number" id="mindFridayQual" min="1" max="5"></td>
+                        </tr>
+                        <tr>
+                            <td>Sábado</td>
+                            <td><input type="checkbox" id="mindSaturday"></td>
+                            <td><input type="number" id="mindSaturdayDur" min="0" max="120"></td>
+                            <td><input type="number" id="mindSaturdayQual" min="1" max="5"></td>
+                        </tr>
+                        <tr>
+                            <td>Domingo</td>
+                            <td><input type="checkbox" id="mindSunday"></td>
+                            <td><input type="number" id="mindSundayDur" min="0" max="120"></td>
+                            <td><input type="number" id="mindSundayQual" min="1" max="5"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="form-group">
+                <label for="reflexao"> <strong>Reflexão pessoal:</strong> Como mindfulness impactou sua semana?</label>
+                <textarea id="reflexao" rows="2" placeholder="Descreva como foi sua experiência..."></textarea>
+            </div>
+
+            <div class="premio-container" id="premio3">
+                <div class="premio-icone">🎗️🧘</div>
+                <div class="premio-texto">🧘 Mindfulness Iniciado!</div>
+                <div class="premio-pontos">+10 Pontos</div>
+            </div>
+
+            <div class="botoes-navegacao">
+                <button class="btn btn-secundario" onclick="voltarPagina(3)">← Anterior</button>
+                <button class="btn btn-primario" onclick="avancarPagina(3)">Próximo →</button>
+            </div>
+        </div>
+
+        <!-- ===================================
+             PÁGINA 4: EXPERIÊNCIAS POSITIVAS
+             =================================== -->
+        <div class="pagina" id="pagina4">
+            <h2 class="pagina-titulo">🌟3. Experiências Positivas</h2>
+
+            <h3>3.1 Técnica de Savoring ✨ Momentos para Aproveitar</h3>
+            <div class="card">
+            <strong>Fundamento Científico:</strong> 
+            <p style="margin-top: 10px;">Savoring é reconhecer e apreciar de modo consciente (saborear) experiências positivas. Isso fortalece vias neurais de resiliência aumentando a intensidade e duração de emoções positivas, correlacionado com bem-estar sustentado<sup>[4,5,19]</sup>.</p>
+            </div>
+
+            <!-- QUADRO INTEGRADO PARA DADOS -->
+            <div class="quadro-integrado">
+                <div class="form-group" style="margin-bottom: 15px;">
+                    <label><strong>Momento 1:</strong></label>
+                    <input type="text" id="momento1Desc" placeholder="Descreva um momento especial que você apreciou esta semana..." style="width: 100%; padding: 12px; border: 2px solid #d4af37; border-radius: 12px; background-color: #fff; box-shadow: 0 0 10px rgba(212, 175, 55, 0.2); font-family: Arial, sans-serif; color: #333;">
+                </div>
+
+                <table style="width: 100%; border-collapse: collapse;">
+                    <tbody>
+                        <tr>
+                            <td style="padding: 12px; background: linear-gradient(135deg, rgba(212, 175, 55, 0.08) 0%, rgba(212, 175, 55, 0.03) 100%); font-weight: 600; width: 50%;">
+                                <strong>Pensamento:</strong>
+                                <textarea id="momento1Pens" placeholder="De que forma aquele momento foi significativo para você?" style="width: 100%; height: 80px; margin-top: 8px; padding: 8px; border: 1px solid #d4af37; border-radius: 8px; font-family: Arial, sans-serif; resize: vertical; background-color: #fff; box-shadow: inset 0 0 5px rgba(212, 175, 55, 0.1);"></textarea>
+                            </td>
+                            <td style="padding: 12px; background: linear-gradient(135deg, rgba(212, 175, 55, 0.08) 0%, rgba(212, 175, 55, 0.03) 100%); font-weight: 600; width: 50%;">
+                                <strong>Sentimento:</strong>
+                                <textarea id="momento1Sent" placeholder="Descreva seu estado emocional naquele momento..." style="width: 100%; height: 80px; margin-top: 8px; padding: 8px; border: 1px solid #d4af37; border-radius: 8px; font-family: Arial, sans-serif; resize: vertical; background-color: #fff; box-shadow: inset 0 0 5px rgba(212, 175, 55, 0.1);"></textarea>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="quadro-integrado">
+                <div class="form-group" style="margin-bottom: 15px;">
+                    <label><strong>Momento 2:</strong></label>
+                    <input type="text" id="momento2Desc" placeholder="Descreva um momento especial que você apreciou esta semana...">
+                </div>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <strong>Pensamento:</strong>
+                                <textarea id="momento2Pens" placeholder="De que forma aquele momento foi significativo para você?"></textarea>
+                            </td>
+                            <td>
+                                <strong>Sentimento:</strong>
+                                <textarea id="momento2Sent" placeholder="Descreva seu estado emocional naquele momento..."></textarea>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="quadro-integrado">
+                <div class="form-group" style="margin-bottom: 15px;">
+                    <label><strong>Momento 3:</strong></label>
+                    <input type="text" id="momento3Desc" placeholder="Descreva um momento especial que você apreciou esta semana..." style="width: 100%; padding: 12px; border: 2px solid #d4af37; border-radius: 12px; background-color: #fff; box-shadow: 0 0 10px rgba(212, 175, 55, 0.2); font-family: Arial, sans-serif; color: #333;">
+                </div>
+
+                <table style="width: 100%; border-collapse: collapse;">
+                    <tbody>
+                        <tr>
+                            <td style="padding: 12px; background: linear-gradient(135deg, rgba(212, 175, 55, 0.08) 0%, rgba(212, 175, 55, 0.03) 100%); font-weight: 600; width: 50%;">
+                                <strong>Pensamento:</strong>
+                                <textarea id="momento3Pens" placeholder="De que forma aquele momento foi significativo para você?" style="width: 100%; height: 80px; margin-top: 8px; padding: 8px; border: 1px solid #d4af37; border-radius: 8px; font-family: Arial, sans-serif; resize: vertical; background-color: #fff; box-shadow: inset 0 0 5px rgba(212, 175, 55, 0.1);"></textarea>
+                            </td>
+                            <td style="padding: 12px; background: linear-gradient(135deg, rgba(212, 175, 55, 0.08) 0%, rgba(212, 175, 55, 0.03) 100%); font-weight: 600; width: 50%;">
+                                <strong>Sentimento:</strong>
+                                <textarea id="momento3Sent" placeholder="Descreva seu estado emocional naquele momento..." style="width: 100%; height: 80px; margin-top: 8px; padding: 8px; border: 1px solid #d4af37; border-radius: 8px; font-family: Arial, sans-serif; resize: vertical; background-color: #fff; box-shadow: inset 0 0 5px rgba(212, 175, 55, 0.1);"></textarea>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>3.2 Registro de Gratidão ✨ Bênçãos ou Dádivas</h3>
+            
+        <div class="card">
+            <strong>Fundamento Científico:</strong> 
+            <p style="margin-top: 10px;">Gratidão semanal aumenta bem-estar (d=0,5-0,7) e reduz sintomas depressivos. Frequência semanal é ideal para manutenção de benefícios<sup>[5,6]</sup>.</p>
+        </div>
+
+            <h3 style="color: var(--primario-forte); margin: 28px 0 16px 0; font-size: 1.3rem; font-weight: 600;">Experiências Positivas Vividas</h3>
+            <table id="tabela-experiencias-positivas">
+                <thead>
+                    <tr>
+                        <th>Acontecimento Positivo</th>
+                        <th>Minha Contribuição</th>
+                        <th>Força de Caráter*</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><textarea id="exp1" rows="2"></textarea></td>
+                        <td><textarea id="contrib1" rows="2"></textarea></td>
+                        <td><textarea id="forca1" rows="2" placeholder="Ex: Criatividade, Curiosidade, Critério, Amor ao Aprendizado, Perspectiva..."></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><textarea id="exp2" rows="2"></textarea></td>
+                        <td><textarea id="contrib2" rows="2"></textarea></td>
+                        <td><textarea id="forca2" rows="2" placeholder="Ex: Bravura, Persistência, Integridade, Vitalidade, Amor..."></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><textarea id="exp3" rows="2"></textarea></td>
+                        <td><textarea id="contrib3" rows="2"></textarea></td>
+                        <td><textarea id="forca3" rows="2" placeholder="Ex: Gentileza, Inteligência Social, Cidadania, Justiça, Liderança..."></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><textarea id="exp4" rows="2"></textarea></td>
+                        <td><textarea id="contrib4" rows="2"></textarea></td>
+                        <td><textarea id="forca4" rows="2" placeholder="Ex: Perdão, Humildade, Prudência, Autocontrole, Apreciação da Beleza..."></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><textarea id="exp5" rows="2"></textarea></td>
+                        <td><textarea id="contrib5" rows="2"></textarea></td>
+                        <td><textarea id="forca5" rows="2" placeholder="Ex: Gratidão, Esperança, Humor, Espiritualidade."></textarea></td>
+                    </tr>
+                </tbody>
+            </table>
+        
+            <div class="card">
+                <strong>✨*Forças de Caráter (VIA Institute)</strong>
+                <p style="margin-top: 10px; font-size: 0.9rem;">Criatividade, Curiosidade, Critério, Amor ao Aprendizado, Perspectiva, Bravura, Persistência, Integridade, Vitalidade, Amor, Gentileza, Inteligência Social, Cidadania, Justiça, Liderança, Perdão, Humildade, Prudência, Autocontrole, Apreciação da Beleza, Gratidão, Esperança, Humor, Espiritualidade<sup>[7,17]</sup>.</p>
+            </div>
+
+            <div class="form-group">
+                <label for="conclusao"> <strong>Conclusões a respeito de si:</strong> O quanto foi significativo para mim estas experiências e o que me fazem pensar a meu respeito?</label>
+                <textarea id="conclusao" rows="2" placeholder="O que estas experiências mostram sobre você?"></textarea>
+            </div>
+        
+            <div class="premio-container" id="premio4">
+                <div class="premio-icone">🎗️🧘🌟</div>
+                <div class="premio-texto">🌟Experiências Positivas Registradas!</div>
+                <div class="premio-pontos">+10 Pontos</div>
+            </div>
+
+            <div class="botoes-navegacao">
+                <button class="btn btn-secundario" onclick="voltarPagina(4)">← Anterior</button>
+                <button class="btn btn-primario" onclick="avancarPagina(4)">Próximo →</button>
+            </div>
+        </div>
+
+        <!-- ===================================
+             PÁGINA 5: SINAIS DE ALERTA
+             =================================== -->
+        <div class="pagina" id="pagina5">
+            <h2 class="pagina-titulo">🚨 4. Sinais de Alerta</h2>
+
+            <h3>🆘 4.1 Automonitoramento</h3>
+
+            <div class="card">
+                <strong>Fundamento Científico:</strong>
+                <p style="margin-top: 10px;">Este módulo segue o protocolo de Prevenção de Recaída validado internacionalmente. Reconhecer sinais de alerta antecipadamente reduz risco de recaída em <strong>67%</strong><sup>[6,7]</sup>.
+            </p></div>
+
+            <p class="pagina-descricao">Marque com ✓ se algum dos sinais esteve presente esta semana. O quanto antes você perceber a sobrecarga emocional em sua vida, melhor será para se antecipar aos momentos de crise.</p>
+
+            <div class="checkbox-group">
+                <div class="checkbox-item">
+                    <input type="checkbox" id="sinal1">
+                    <label for="sinal1">Isolamento social ou evitar atividades prazerosas</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="sinal2">
+                    <label for="sinal2">Mudanças no padrão de sono (insônia ou dormir demais)</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="sinal3">
+                    <label for="sinal3">Alterações no apetite, padrão alimentar ou peso</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="sinal4">
+                    <label for="sinal4">Aumento de pensamentos negativos ou ruminação</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="sinal5">
+                    <label for="sinal5">Dificuldade de concentração ou para tomar decisões</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="sinal6">
+                    <label for="sinal6">Irritação frequente ou alterações de humor</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="sinal7">
+                    <label for="sinal7">Negligência com autocuidado ou práticas terapêuticas</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="sinal8">
+                    <label for="sinal8">Sintomas físicos sem causa médica aparente</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="sinal9">
+                    <label for="sinal9">Aumento de comportamentos de risco</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="sinal10">
+                    <label for="sinal10">Pensamentos sobre desistir ou perder a esperança</label>
+                </div>
+            </div>
+
+            <div class="alerta alerta-erro">
+                <span class="alerta-icone">⚠️</span>
+                <div>
+                    <strong>ALERTA IMPORTANTE:</strong> Se marcou <strong>3 ou mais sinais</strong>, contacte seu psicoterapeuta <strong>hoje ou amanhã</strong>. Pode não ser uma emergência, mas requer atenção. 
+                    Recomendamos que responda às Escalas de Rastreio que disponibilizamos gratuitamente em nosso site. 
+                    Clique <a href="https://www.royaltyfamilies.com/escalas-de-rastreio" target="_blank" style="color:#003366; font-weight:bold;"><strong>AQUI</strong></a> 
+                    para acessar a página e responda (preferencialmente) as Escalas PANAS, PHQ9, PHQ15 e/ou GAD7 (nas respectivas pastas 7, 8, 9 e 10). 
+                    Você receberá os resultados por E-mail e uma cópia irá para nosso banco de dados. 
+                </div>
+            </div>
+
+            <h3>🆘 4.2 Plano de Emergência</h3>
+            <div class="card">
+                <strong>Fundamento Científico:</strong>
+                <p style="margin-top: 10px;">Identificar sinais precoces de alerta é componente essencial da prevenção de recaída Baseada em Evidências, permitindo preparação proativa e resposta adaptativa<sup>[8,9,15,18]</sup>.</p>
+            </div>
+
+            <div class="form-group">
+            <label for="evento_1">Evento 1:</label>
+            <input type="text" id="evento_1" name="evento_1" placeholder="Situação, pensamento, sensação ou lugar quando percebeu algum sinal ou sintoma">
+            </div>
+
+            <div class="form-group">
+            <label for="evento_2">Evento 2:</label>
+            <input type="text" id="evento_2" name="evento_2" placeholder="Situação, pensamento, sensação ou lugar quando percebeu algum sinal ou sintoma">
+            </div>
+
+            <div class="form-group">
+            <label for="evento_3">Evento 3:</label>
+            <input type="text" id="evento_3" name="evento_3" placeholder="Situação, pensamento, sensação ou lugar quando percebeu algum sinal ou sintoma">
+            </div>
+
+            <h3>4.3 Estratégias de Enfrentamento Imediatas</h3>
+
+            <div class="card">
+                <strong>Fundamento Científico:</strong>
+                <p style="margin-top: 10px;">Estratégias de enfrentamento de curto prazo (STOP, exercício físico, suporte social) são componentes fundamentais de planos de prevenção de recaída eficazes<sup>[1,3,18]</sup>.
+            </p></div>
+
+            <div class="form-group">
+            <label for="mindfulness_stop">Situações para usar o Mindfulness "STOP":</label>
+            <input type="text" id="mindfulness_stop" name="mindfulness_stop" placeholder="Ou PROVA (Pare, Respire, Observe e Vá Adiante)">
+            </div>
+
+            <div class="form-group">
+            <label for="exercicio_fisico">Exercício ou Atividade Física:</label>
+            <input type="text" id="exercicio_fisico" name="exercicio_fisico" placeholder="O quê, quando, onde, como...">
+            </div>
+
+            <div class="form-group">
+            <label for="ajudar_acompanhar">Quem pode me ajudar ou me acompanhar:</label>
+            <input type="text" id="ajudar_acompanhar" name="ajudar_acompanhar" placeholder="Quem posso contactar para ajudar ou me acompanhar">
+            </div>
+
+            <div class="form-group">
+            <label for="local_seguro">Local Seguro:</label>
+            <input type="text" id="local_seguro" name="local_seguro" placeholder="Ondem posso ter um tempo só para mim tranquilo e seguro">
+            </div>
+
+            <div class="premio-container" id="premio5">
+                <div class="premio-icone">🎗️🧘🌟🏅</div>
+                <div class="premio-texto">🏅Sinais Reconhecidos!</div>
+                <div class="premio-pontos">+10 Pontos</div>
+            </div>
+
+            <div class="botoes-navegacao">
+                <button class="btn btn-secundario" onclick="voltarPagina(5)">← Anterior</button>
+                <button class="btn btn-primario" onclick="avancarPagina(5)">Próximo →</button>
+            </div>
+        </div>
+
+        <!-- ===================================
+             PÁGINA 6: RESOLUÇÃO DE PROBLEMAS
+             =================================== -->
+        <div class="pagina" id="pagina6">
+            <h2 class="pagina-titulo">💡5. Resolução de Problemas</h2>
+
+            <h3>5.1 Avaliação e Definição do Problema</h3>
+
+            <div class="card">
+                <strong>Fundamento Científico:</strong>
+                <p style="margin-top: 10px;">Habilidades para resolução de problemas estruturadas são intervenções baseadas em evidências para prevenção de recaída, reduzem ansiedade e aumentam autoeficácia em <strong>58%</strong><sup>[8]</sup>.</p>
+            </div>
+
+            <p class="pagina-descricao">Identifique se há algum problema atual e desenvolva estratégias de solução passo a passo.</p>
+
+            <div class="form-group">
+                <label for="problema">Meu principal desafio nesta semana é (ou foi)...</label>
+                <textarea id="problema" rows="4" placeholder="Descreva a situação que está enfrentando e o que já tentou para resolver..."></textarea>
+            </div>
+
+            <div class="form-group">
+            <label style="margin-top: 15px;">Situação atual:</label>
+      <div style="display: flex; gap: 20px; margin-top: 10px; flex-wrap: wrap;">
+        <label style="display: flex; gap: 8px; align-items: center;">
+          <input type="radio" name="resultado_problema" value="resolvido">
+          <span>✅ Resolvido</span>
+        </label>
+        <label style="display: flex; gap: 8px; align-items: center;">
+          <input type="radio" name="resultado_problema" value="melhorou">
+          <span>📈 Melhorou</span>
+        </label>
+        <label style="display: flex; gap: 8px; align-items: center;">
+          <input type="radio" name="resultado_problema" value="sem_mudanca">
+          <span>➡️ Sem mudança</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="form-group" style="margin-top: 20px;">
+      <label for="acao_necessaria">Se não foi resolvido, há algo que devo fazer?</label>
+      <textarea id="acao_necessaria" name="acao_necessaria" placeholder="Se nada for feito, o que pode acontecer? Qual o meu Objetivo?"></textarea>
+    </div>
+            
+    <h3>5.2 Análise de Opções</h3>
+
+            <div class="card">
+                <strong>Fundamento Científico:</strong>
+                <p style="margin-top: 10px;">A análise sistemática de vantagens e desvantagens da opções melhora a qualidade das decisões<sup>[10,11,16]</sup>.</p>
+            </div>
+
+            <table id="tabela-analise-opcoes">
+                <thead>
+                    <tr>
+                        <th>Opção</th>
+                        <th>Vantagens</th>
+                        <th>Desvantagens</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><textarea id="opcao1" rows="2"></textarea></td>
+                        <td><textarea id="vant1" rows="2"></textarea></td>
+                        <td><textarea id="desv1" rows="2"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><textarea id="opcao2" rows="2"></textarea></td>
+                        <td><textarea id="vant2" rows="2"></textarea></td>
+                        <td><textarea id="desv2" rows="2"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><textarea id="opcao3" rows="2"></textarea></td>
+                        <td><textarea id="vant3" rows="2"></textarea></td>
+                        <td><textarea id="desv3" rows="2"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><textarea id="opcao4" rows="2"></textarea></td>
+                        <td><textarea id="vant4" rows="2"></textarea></td>
+                        <td><textarea id="desv4" rows="2"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><textarea id="opcao5" rows="2"></textarea></td>
+                        <td><textarea id="vant5" rows="2"></textarea></td>
+                        <td><textarea id="desv5" rows="2"></textarea></td>
+                    </tr>
+                </tbody>
+            </table>
+           
+            <div class="form-group">
+            <label>Solução Escolhida (ou Síntese de Todas) como OBJETIVO para implementar: <input type="text" id="solucao_escolhida" placeholder="Faça um resumo da sua decisão"></label>
+            </div>
+
+            <p class="pagina-descricao">Excelente! Na próxima Etapa você poderá avaliar o Objetivo que definiu.</p>
+
+            <div class="premio-container" id="premio6">
+                <div class="premio-icone">🎗️🧘🌟🏅💡</div>
+                <div class="premio-texto">💡Problemas Resolvidos!</div>
+                <div class="premio-pontos">+10 Pontos</div>
+            </div>
+
+            <div class="botoes-navegacao">
+                <button class="btn btn-secundario" onclick="voltarPagina(6)">← Anterior</button>
+                <button class="btn btn-primario" onclick="avancarPagina(6)">Próximo →</button>
+            </div>
+        </div>
+
+        <!-- ===================================
+             PÁGINA 7: ESTRATÉGIA SMART
+             =================================== -->
+        <div class="pagina" id="pagina7">
+            <h2 class="pagina-titulo">🎯6. Estratégia SMART*</h2>
+
+            <div class="card">
+                <strong>Fundamento Científico:</strong>
+                <p style="margin-top: 10px;">Objetivos SMART (Específicas, Mensuráveis, Alcançáveis, Relevantes, com Prazo) aumentam taxa de sucesso sustentado em <strong>95%</strong> comparado a objetivos vagos<sup>[9, 12, 13]</sup>.</p>
+            </div>
+
+            <h3>6.1 Seu Objetivo para esta semana é...</h3>
+
+    <div class="form-group">
+      <label for="meta_descricao">(S) Específico: </label>
+      <input type="text" id="meta_descricao" name="meta_descricao" required="" placeholder="Em vez de dizer: quero melhorar! Diga exatamente o quê deseja melhorar!">
+    </div>
+
+    <div class="form-group">
+      <label for="meta_mensuravel">(M) Mensurável: </label>
+      <input type="text" id="meta_mensuravel" name="meta_mensuravel" required="" placeholder="Como saberei que estou conseguindo? Qual seria o menor sinal de mudança?">
+    </div>
+
+    <div class="form-group">
+      <label for="meta_relevancia">(A) Alcançável: </label>
+      <input type="text" id="meta_alcancavel" name="meta_alcancavel" required="" placeholder="O quanto são realistas minhas expectativas? Não precisa mudar tudo de uma vez!">
+    </div>
+
+    <div class="form-group">
+      <label for="meta_relevancia">(R) Relevante: </label>
+      <input type="text" id="meta_relevancia" name="meta_relevancia" required="" placeholder="Por que é importante para mim? O quanto é significativo para mim?">
+    </div>
+
+    <div class="form-group">
+      <label for="meta_prazo">(T) Tempo definido: </label>
+      <input type="date" id="meta_prazo" name="meta_prazo" required="">
+    </div>
+    <div class="alert"></div>
+     <strong>*SMART</strong>
+        (Sigla original em inglês para: Specific, Measurable, Achievable, Relevant, and Time-bound)
+   
+    <h3>6.2 Plano de Ação</h3>
+            <div class="quadro-integrado">
+                <table id="tabela-plano-acao">
+                    <thead>
+                        <tr>
+                            <th>Passo</th>
+                            <th>Ação necessária</th>
+                            <th>Previsão de Conclusão</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><input type="text" id="acao1"></td>
+                            <td><input type="date" id="data1"></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><input type="text" id="acao2"></td>
+                            <td><input type="date" id="data2"></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><input type="text" id="acao3"></td>
+                            <td><input type="date" id="data3"></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><input type="text" id="acao4"></td>
+                            <td><input type="date" id="data4"></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td><input type="text" id="acao5"></td>
+                            <td><input type="date" id="data5"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="form-group">
+            <label for="obstaculos">Obstáculos Previstos:</label>
+            <textarea id="obstaculos" name="obstaculos" placeholder="Que dificuldades posso encontrar?"></textarea>
+            </div>
+
+            <div class="form-group">
+            <label for="estrategias">Estratégias para Superá-los:</label>
+            <textarea id="estrategias" name="estrategias" placeholder="Como vou lidar com as dificuldades?"></textarea>
+            </div>
+
+            <div class="premio-container" id="premio7">
+                <div class="premio-icone">🎗️🧘🌟🏅💡👑</div>
+                <div class="premio-texto">🎯Metas Estabelecidas!</div>
+                <div class="premio-pontos">+10 Pontos</div>
+            </div>
+
+            <div class="botoes-navegacao">
+                <button class="btn btn-secundario" onclick="voltarPagina(7)">← Anterior</button>
+                <button class="btn btn-primario" onclick="avancarPagina(7)">Próximo →</button>
+            </div>
+        </div>
+
+        <!-- ===================================
+             PÁGINA 8: VALORES E CONEXÃO
+             =================================== -->
+        <div class="pagina" id="pagina8">
+            <h2 class="pagina-titulo">💎7. Conexão com SEUS Valores e Propósitos</h2>
+
+            <div class="card">
+                <strong>Fundamento Científico:</strong>
+                <p style="margin-top: 10px;">Alinhamento com valores pessoais aumenta motivação e resiliência em <strong>73%</strong><sup>[10]</sup>. Este exercício segue princípios da Terapia de Aceitação e Compromisso (ACT).</p>
+            </div>
+
+            <p class="pagina-descricao">Conecte-se com seus valores mais profundos, identidade desejada e sonhos para o futuro. Isso orienta todas as suas decisões.</p>
+
+            <h3>7.1 Seu Mapa de Valores</h3><br>
+        
+    <div class="form-group">
+      <label for="sentimento_semana">Como desejo me sentir ao final desta semana?</label>
+      <input type="text" id="sentimento_semana" name="sentimento_semana" placeholder="Ex: esperançoso, calmo, motivado">
+    </div>
+
+    <div class="form-group">
+      <label for="atividades_anteriores">Que atividades já me fizeram sentir assim?</label>
+      <input type="text" id="atividades_anteriores" name="atividades_anteriores" placeholder="Atividades que sei fazer e já me geraram esse sentimento">
+    </div>
+
+    <div class="form-group">
+      <label for="aprender_experimentar">O que posso aprender ou experimentar para me fazer sentir assim?</label>
+      <input type="text" id="aprender_experimentar" name="aprender_experimentar" placeholder="Coisas novas que podem gerar esse sentimento">
+    </div>
+
+    <div class="form-group">
+      <label for="iniciativas_minhas">Que iniciativas posso tomar para desfrutar algo que gosto? </label>
+      <input type="text" id="iniciativas_minhas" name="iniciativas_minhas" placeholder="Coisas que não dependem dos outros para eu me sentir bem">
+    </div>
+
+    <h3>7.2 Minhas Forças de Assinatura</h3><br>
+    <div class="form-group">
+      <label for="forcas_mais">As Forças que MAIS utilizei esta semana foram:</label>
+      <input type="text" id="forcas_mais" name="forcas_mais" placeholder="Não precisa ser apenas as suas de Assinatura">
+    </div>
+
+    <div class="form-group">
+      <label for="forcas_menos">As Forças que MENOS utilizei esta semana foram:</label>
+      <input type="text" id="forcas_menos" name="forcas_menos" placeholder="Não significa que não as têm">
+    </div>
+
+    <div class="form-group">
+      <label for="forcas_desejo">As Forças que DESEJO utilizar esta semana são:</label>
+      <input type="text" id="forcas_desejo" name="forcas_desejo" placeholder="Qualquer uma das 24 Forças de Caráter">
+    </div>
+            
+    <h3>7.3 Pequenas coisas que posso fazer no cotidiano que demonstram ou me aproximem de:</h3>
+            <table id="tabela-pequenas-coisas">
+                <thead>
+                    <tr>
+                        <th>Minhas Forças de Assinatura</th>
+                        <th>Como Quero Ser Visto</th>
+                        <th>Meus Sonhos a Realizar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><textarea id="forcas" rows="4" placeholder="Pequenas coisas que demonstram minhas virtudes..."></textarea></td>
+                        <td><textarea id="identidade" rows="4" placeholder="Algo que as pessoas percebem e é como desejo ser reconhecido"></textarea></td>
+                        <td><textarea id="sonhos" rows="4" placeholder="Alguns passos em direção às minhas metas na vida..."></textarea></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>7.4 Rede de Suporte</h3>
+
+            <div class="card">
+                <strong>Fundamento Científico:</strong>
+                <p style="margin-top: 10px;">Redes de suporte social estruturadas reduzem significativamente riscos de recaída e melhoram resultados terapêuticos em longo prazo<sup>[8,15]</sup>.</p>
+            </div>
+
+            <div class="quadro-integrado">
+                <table id="tabela-rede-suporte">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Relação</th>
+                            <th>Telefone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" id="contatoPsi" placeholder="Nome do(a) Psicólogo(a)"></td>
+                            <td>Psicólogo(a)</td>
+                            <td><input type="tel" id="telPsi" placeholder="(00) 00000-0000"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="contatoFam" placeholder="Nome do Familiar"></td>
+                            <td>Familiar/Amigo</td>
+                            <td><input type="tel" id="telFam" placeholder="(00) 00000-0000"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="contatoAmigo" placeholder="Outro contato importante"></td>
+                            <td>Suporte</td>
+                            <td><input type="tel" id="telAmigo" placeholder="(00) 00000-0000"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+      <h3>🆘7.5 Emergência 24h:🆘</h3>
+      <div style="margin-top: 10px;">
+        🚨 CVV: <strong>188</strong> (gratuito, humanizado)<br>
+        🚨 SAMU: <strong>192</strong> (Brasil)<br>
+        🚨 Polícia: <strong>190</strong> (Brasil)<br>
+        🚨 Lifeline: <strong>988</strong> (EUA)<br>  
+        🚨 Samaritans: <strong>116 123</strong> (UK)<br> 
+        🚨 SOS: <strong>112</strong> (Europa)
+      </div>
+
+    <h3 style="margin-top: 30px;">📊 7.6 Avaliação Geral da Semana</h3><br>
+    <div class="form-group">
+      <label for="pontos_fortes">Pontos Fortes (O que funcionou bem?):</label>
+      <input type="text" id="pontos_fortes" name="pontos_fortes" placeholder="Sucessos desta semana">
+    </div>
+
+    <div class="form-group">
+      <label for="desafios">Desafios Enfrentados (O que foi difícil?):</label>
+      <input type="text" id="desafios" name="desafios" placeholder="Dificuldades desta semana">
+    </div>
+
+    <div class="form-group">
+      <label for="bem_estar_geral">Bem-estar Geral (0-10):</label>
+      <input type="number" id="bem_estar_geral" name="bem_estar_geral" min="0" max="10" placeholder="0 a 10">
+    </div>
+
+    <p class="pagina-descricao">Ao clicar em "Finalizar" suas respostas e informações serão enviadas para noso banco de dados. Você poderá imprimir ou salvar uma cópia clicando em botões na página seguinte.</p>
+
+
+            <div class="premio-container" id="premio8">
+                <div class="premio-icone">🎗️🧘🌟🏅💡👑🏆</div>
+                <div class="premio-texto">🎆 Jornada Concluída!</div>
+                <div class="premio-pontos">+10 Pontos</div>
+            </div>
+
+            <div class="botoes-navegacao">
+                <button class="btn btn-secundario" onclick="voltarPagina(8)">← Anterior</button>
+                <button class="btn btn-primario" onclick="finalizarEMostrarResumo()">Finalizar ✨</button>
+            </div>
+        </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+window.onload = function() {
+    emailjs.init("U8IJNVrOBvN8OQxUU"); // Public Key do EmailJS
+
+    // Liga o botão "Finalizar" da última página
+    document.querySelectorAll(".btn-primario").forEach(function(btn){
+      if(btn.textContent.includes("Finalizar")){
+        btn.addEventListener("click", function() {
+          finalizarEEnviarPDF();
+        });
+      }
+    });
+
+    async function gerarEEnviarPDF() {
+        try {
+            const dados = coletarTodosDados();
+            
+            // Validar e-mail
+            if (!dados.email || !dados.email.includes('@')) {
+                alert('❌ Por favor, preencha um e-mail válido!');
+                return;
+            }
+
+            // Gerar nomes dos arquivos
+            const nomeArquivo = `Relatorio_Prevencao_${dados.nomeCompleto.replace(/\s+/g, '_')}_${new Date().toISOString().slice(0, 10)}`;
+            
+            // Mostrar indicador de carregamento
+            mostrarCarregamento('📄 Gerando PDF...');
+
+            // Gerar PDF
+            const pdfHtml = gerarPDF();
+            const element = document.createElement('div');
+            element.innerHTML = pdfHtml;
+            
+            const opt = {
+                margin: 10,
+                filename: `${nomeArquivo}.pdf`,
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { orientation: 'portrait', unit: 'mm', format: 'a4' }
+            };
+
+                html2pdf().set(opt).from(element).output('blob').then(async (pdfBlob) => {
+                mostrarCarregamento('📊 Gerando XLSX...');
+                
+                // AJUSTE CRÍTICO: Limpar viewport para evitar corte em dispositivos móveis
+                const jsPDFOptions = {
+                    orientation: 'portrait',
+                    unit: 'mm',
+                    format: 'a4'
+                };
+                
+                // Detectar dispositivo móvel para ajustar renderização
+                const isMobile = window.innerWidth < 768;
+                const html2canvasOptions = {
+                    scale: isMobile ? 1.5 : 2,
+                    allowTaint: true,
+                    useCORS: true,
+                    scrollY: -window.scrollY,
+                    windowHeight: element.scrollHeight,
+                    windowWidth: 800  // Largura fixa para evitar corte
+                };                // Gerar XLSX
+                const wb = gerarXLSX();
+                const wbout = XLSX.write(wb, { bookType: 'xlsx', type: 'array' });
+                const xlsxBlob = new Blob([wbout], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
+
+                mostrarCarregamento('📧 Enviando dados para seu e-mail...');
+
+                // Preparar FormData para enviar
+                const formData = new FormData();
+                formData.append('email', dados.email);
+                formData.append('name', dados.nomeCompleto);
+                formData.append('phone', dados.telefone);
+                formData.append('diagnosis', dados.diagnostico);
+                formData.append('score', dados.pontuacao);
+                formData.append('all_data', JSON.stringify(coletarTodosDados()));
+                formData.append('pdf', pdfBlob, `${nomeArquivo}.pdf`);
+                formData.append('xlsx', xlsxBlob, `${nomeArquivo}.xlsx`);
+
+                try {
+                    // Tentar enviar para backend simplificado
+                    const response = await fetch('https://formspree.io/f/xyzqwert', {
+                        method: 'POST',
+                        body: formData
+                    }).catch(() => null);
+
+                    // Se conseguiu enviar
+                    if (response && response.ok) {
+                        console.log('✅ Email enviado via FormSpree');
+                    }
+                } catch (fetchError) {
+                    console.log('⚠️ FormSpree não disponível, continuando...');
+                }
+
+                // Tentar enviar via EmailJS como backup
+                try {
+                    await emailjs.send('service_royalty', 'template_relatorio', {
+                        to_email: dados.email,
+                        to_name: dados.nomeCompleto,
+                        from_email: 'psicologoluisbernardo@gmail.com',
+                        from_name: 'Royalty Families',
+                        subject: `Seu Relatório de Prevenção - ${new Date().toLocaleDateString('pt-BR')}`,
+                        message: `Olá ${dados.nomeCompleto},\n\nSeus arquivos de relatório foram gerados com sucesso! Os arquivos estão em anexo.\n\nPontuação: ${dados.pontuacao} pontos\nData: ${dados.dataFinalizacao}\n\nAtenciosamente,\nPsicólogo Luis Antonio Silva Bernardo (CRP 19/004142)`,
+                        reply_to: dados.email,
+                        user_score: dados.pontuacao
+                    });
+                    console.log('✅ Email enviado via EmailJS');
+                } catch (emailError) {
+                    console.log('⚠️ EmailJS falhou:', emailError.message);
+                }
+
+                // GARANTIR: Download automático dos arquivos para o usuário
+                mostrarCarregamento('💾 Salvando cópias localmente...');
+                
+                setTimeout(() => {
+                    // Fazer download do PDF
+                    const pdfUrl = URL.createObjectURL(pdfBlob);
+                    const pdfLink = document.createElement('a');
+                    pdfLink.href = pdfUrl;
+                    pdfLink.download = `${nomeArquivo}.pdf`;
+                    document.body.appendChild(pdfLink);
+                    pdfLink.click();
+                    document.body.removeChild(pdfLink);
+                    URL.revokeObjectURL(pdfUrl);
+
+                    // Fazer download do XLSX
+                    setTimeout(() => {
+                        const xlsxUrl = URL.createObjectURL(xlsxBlob);
+                        const xlsxLink = document.createElement('a');
+                        xlsxLink.href = xlsxUrl;
+                        xlsxLink.download = `${nomeArquivo}.xlsx`;
+                        document.body.appendChild(xlsxLink);
+                        xlsxLink.click();
+                        document.body.removeChild(xlsxLink);
+                        URL.revokeObjectURL(xlsxUrl);
+                    }, 500);
+                }, 500);
+
+                // Mostrar mensagem de sucesso
+                setTimeout(() => {
+                    fecharCarregamento();
+                    alert(`✅ SUCESSO!\n\n📥 Seus arquivos foram salvos localmente:\n- ${nomeArquivo}.pdf\n- ${nomeArquivo}.xlsx\n\n📧 Também foi enviado um e-mail para:\n${dados.email}\n\n📎 Email será armazenado em:\npsicologoluisbernardo@gmail.com\n\nVerifique sua pasta de e-mails (inclusive SPAM).`);
+                    console.log('✅ Processo concluído com sucesso!');
+                }, 2000);
+
+            }).catch(pdfError => {
+                fecharCarregamento();
+                console.error('❌ Erro ao gerar PDF:', pdfError);
+                alert('❌ Erro ao gerar PDF: ' + pdfError.message);
+            });
+
+        } catch (error) {
+            console.error('❌ Erro:', error);
+            fecharCarregamento();
+            alert('❌ Erro ao processar os arquivos: ' + error.message);
+        }
+    }
+
+    async function enviarParaBancoDados(dados, nomeArquivo) {
+        // Função para enviar dados para banco de dados backend (psicólogo)
+        try {
+            const payload = {
+                timestamp: new Date().toISOString(),
+                userName: dados.nomeCompleto,
+                userEmail: dados.email,
+                formData: coletarTodosDados(),
+                nomeArquivo: nomeArquivo
+            };
+
+            // Tentar enviar para backend Node.js
+            const backendUrl = 'https://royalty-backend-royaltyfamilies.replit.app/api/enviar-relatorio';
+            
+            const response = await fetch(backendUrl, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
+
+            if (response.ok) {
+                const result = await response.json();
+                console.log('✅ Dados enviados ao backend:', result);
+            } else {
+                console.log('ℹ️ Backend retornou erro:', response.status);
+            }
+        } catch (e) {
+            console.log('ℹ️ Backend não disponível. Dados salvos localmente.');
+        }
+    }
+
+    async function enviarEmailComAnexos(dados, pdfBase64, xlsxBase64, nomeArquivo) {
+        try {
+            mostrarCarregamento('📧 Enviando e-mail...');
+
+            // Backend configurado com sucesso
+            const backendUrl = 'https://royalty-backend-royaltyfamilies.replit.app/api/enviar-relatorio';
+
+            const response = await fetch(backendUrl, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    userName: dados.nomeCompleto,
+                    userEmail: dados.email,
+                    userPhone: dados.telefone,
+                    userDiagnosis: dados.diagnostico,
+                    userScore: dados.pontuacao,
+                    pdfBase64: pdfBase64,
+                    xlsxBase64: xlsxBase64,
+                    formData: coletarTodosDados(),
+                    nomeArquivo: nomeArquivo,
+                    dataFinalizacao: dados.dataFinalizacao
+                })
+            });
+
+            fecharCarregamento();
+
+            if (response.ok) {
+                const result = await response.json();
+                alert(`✅ SUCESSO!\n\nSeus relatórios foram enviados para:\n${dados.email}\n\nArquivos:\n- ${nomeArquivo}.pdf\n- ${nomeArquivo}.xlsx\n\nVerifique seu e-mail!\n\nUma cópia foi enviada para: psicologoluisbernardo@gmail.com`);
+                console.log('✅ E-mails enviados com sucesso!', result);
+                return true;
+            } else {
+                const error = await response.json();
+                console.error('⚠️ Backend retornou erro:', error);
+                alert(`⚠️ Aviso ao enviar e-mail:\n${error.mensagem || 'Erro desconhecido'}\n\nMas seus arquivos foram salvos localmente!`);
+                return false;
+            }
+        } catch (error) {
+            fecharCarregamento();
+            console.warn('ℹ️ Backend não disponível. Arquivos salvos localmente.');
+            console.error('Detalhes do erro:', error);
+            alert('ℹ️ Seus arquivos foram salvos localmente!\n\nPara ativar envio de e-mail:\n1. Deploy o backend no Replit\n2. Configure EMAIL_USER e EMAIL_PASSWORD\n3. Atualize a URL do backend no HTML\n\nVeja BACKEND_README.md para instruções');
+            return false;
+        }
+    }
+}
+</script>
+      
+        <!-- ===================================
+             RESUMO FINAL
+             =================================== -->
+        <div id="resumoFinal">
+            <div class="resumo-header">
+                <h2>🎉 Você finalizou com êxito o Guia de Prevenção Royalty Families!</h2>
+                <p style="margin: 16px 0; font-size: 1.2rem;">Sua pontuação final:</p>
+                <div class="pontuacao-final"><span id="pontuacaoFinal">0</span> Pontos</div>
+            </div>
+
+            <div class="pagina" style="display: block;">
+                <h3 style="text-align: center; margin-bottom: 32px; color: var(--primario-forte); font-size: 1.6rem;">
+                    🏆 Suas Conquistas
+                </h3>
+                
+                <div class="premios-grid" id="todosPremios">
+                    <!-- Prêmios serão inseridos dinamicamente -->
+                </div>
+
+                <div class="alerta alerta-aviso" style="margin-top: 32px;">
+                    <span class="alerta-icone">💾</span>
+                    <div>
+                        <strong>Seus dados foram registrados com segurança.</strong><br>
+                        Uma cópia de suas respostas foi enviada para nossa base de dados HIPAA-compliant, permitindo acompanhamento profissional personalizado sempre que você agende uma consulta, aprimoramento dos nossos serviços e avanços em pesquisas científicas.<br><br>
+                        <strong>📧 Contato:</strong> <span style="word-break: break-all;">psicologoluisbernardo@gmail.com</span><br>
+                        <strong>⚖️Confidencialidade:</strong> Garantida por sigilo profissional e conformidade LGPD/GDPR/CCPA
+                    </div>
+                </div>
+
+                <div class="botoes-navegacao">
+                    <button class="btn btn-secundario" onclick="imprimirGuia()">🖨️ Imprimir</button>
+                    <button class="btn btn-primario" onclick="baixarArquivos()">💾 Salvar Dados</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ============================================
+        // SISTEMA DE GAMIFICAÇÃO V3 PREMIUM
+        // ============================================
+
+        let paginaAtual = 1;
+        const totalPaginas = 8;
+        const pontosPorEtapa = 10;
+        let pontuacao = 0;
+        let etapasCompletadas = new Set();
+
+        // Definições dos prêmios
+        const premiosConfig = [
+            { id: 1, nome: 'Consentimento Confirmado', icone: '⭐' },
+            { id: 2, nome: 'Dados Registrados', icone: '🎗️' },
+            { id: 3, nome: 'Mindfulness Iniciado', icone: '🧘' },
+            { id: 4, nome: 'Experiências Positivas', icone: '🌟' },
+            { id: 5, nome: 'Alertas Identificados', icone: '🏅' },
+            { id: 6, nome: 'Soluções Planejadas', icone: '💡' },
+            { id: 7, nome: 'Metas Estabelecidas', icone: '👑' },
+            { id: 8, nome: 'Jornada Completa', icone: '🏆' }
+        ];
+
+        // ============================================
+        // PERSISTÊNCIA COM LOCALSTORAGE
+        // ============================================
+        
+        function carregarProgresso() {
+            try {
+                const progressoSalvo = localStorage.getItem('royaltyPreventionProgress');
+                if (progressoSalvo) {
+                    const dados = JSON.parse(progressoSalvo);
+                    pontuacao = dados.pontuacao || 0;
+                    etapasCompletadas = new Set(dados.etapasCompletadas || []);
+                    paginaAtual = dados.paginaAtual || 1;
+                    console.log('✅ Progresso carregado:', dados);
+                }
+            } catch (error) {
+                console.error('⚠️ Erro ao carregar progresso:', error);
+            }
+        }
+
+        function salvarProgresso() {
+            try {
+                const dados = {
+                    nomeCompleto: document.getElementById('nomeCompleto')?.value || '',
+                    email: document.getElementById('email')?.value || '',
+                    telefone: document.getElementById('telefone')?.value || '',
+                    dataNascimento: document.getElementById('dataNascimento')?.value || '',
+                    idade: document.getElementById('idade')?.value || '',
+                    profissao: document.getElementById('profissao')?.value || '',
+                    diagnostico: document.getElementById('diagnostico')?.value || '',
+                    dataAlta: document.getElementById('dataAlta')?.value || '',
+                    terapeuta: document.getElementById('terapeuta')?.value || '',
+                    pontuacao: pontuacao,
+                    etapasCompletadas: Array.from(etapasCompletadas),
+                    dataFinalizacao: new Date().toISOString(),
+                    versao: '3.0-Premium-Final'
+                };
+                localStorage.setItem('royaltyPreventionProgress', JSON.stringify(dados));
+                
+                // Atualizar header
+                document.getElementById('headerPontuacao').textContent = pontuacao;
+            } catch (error) {
+                console.error('⚠️ Erro ao salvar progresso:', error);
+            }
+        }
+        // ============================================
+        // RESET DO PROGRESSO
+        // ============================================
+
+        function resetarProgresso() {
+            if (confirm('⚠️ TEM CERTEZA? Isso irá limpar TODO o progresso e pontos acumulados.\n\nDeseja continuar?')) {
+                try {
+                    // Limpar dados do localStorage
+                    localStorage.removeItem('royaltyPreventionProgress');
+                    localStorage.removeItem('royaltyPreventionData');
+                    localStorage.removeItem('royaltyPreventionPremios');
+
+                    // Resetar variáveis
+                    pontuacao = 0;
+                    etapasCompletadas = new Set();
+                    paginaAtual = 1;
+
+                    // Atualizar UI
+                    if (document.getElementById('headerPontuacao')) {
+                        document.getElementById('headerPontuacao').textContent = '0';
+                    }
+
+                    // Atualizar barra de progresso
+                    if (document.getElementById('progressBar')) {
+                        document.getElementById('progressBar').style.width = '0%';
+                    }
+
+                    // Resetar steps
+                    document.querySelectorAll('.progress-step').forEach(step => {
+                        step.classList.remove('active', 'completed');
+                    });
+
+                    // Remover classe completed da barra
+                    const progressBar = document.getElementById('progressBar');
+                    if (progressBar) {
+                        progressBar.classList.remove('completed');
+                    }
+
+                    // Atualizar primeira página
+                    mostrarPagina(1);
+                    atualizarProgresso();
+                    restaurarPremios();
+
+                    alert('✅ Progresso resetado com sucesso! Você pode começar novamente.');
+                    console.log('🔄 Progresso resetado para início');
+
+                } catch (error) {
+                    console.error('❌ Erro ao resetar progresso:', error);
+                    alert('⚠️ Ocorreu um erro ao resetar. Tente novamente.');
+                }
+            }
+        }
+
+
+        // ============================================
+        // INICIALIZAÇÃO
+        // ============================================
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            carregarProgresso();
+            inicializarProgressoSteps();
+            mostrarPagina(paginaAtual);
+            atualizarProgresso();
+            restaurarPremios();
+            salvarProgresso();
+        });
+
+        // ============================================
+        // NAVEGAÇÃO
+        // ============================================
+
+        function mostrarPagina(numero) {
+            if (numero < 1 || numero > totalPaginas) {
+                console.error('❌ Número de página inválido:', numero);
+                return;
+            }
+
+            document.querySelectorAll('.pagina').forEach(p => p.classList.remove('ativa'));
+            document.querySelectorAll('.premio-container').forEach(p => p.classList.remove('ativo'));
+
+            const paginaElemento = document.getElementById('pagina' + numero);
+            if (paginaElemento) {
+                paginaElemento.classList.add('ativa');
+            } else {
+                console.error('❌ Página não encontrada:', numero);
+                return;
+            }
+
+            paginaAtual = numero;
+            atualizarProgresso();
+            salvarProgresso();
+        }
+
+        function avancarPagina(numeroAtual) {
+            if (!validarPagina(numeroAtual)) {
+                alert('⚠️ Por favor, preencha todos os campos obrigatórios antes de continuar.');
+                return;
+            }
+
+            if (!etapasCompletadas.has(numeroAtual)) {
+                pontuacao += pontosPorEtapa;
+                etapasCompletadas.add(numeroAtual);
+                console.log(`✅ Etapa ${numeroAtual} completada! Pontos: ${pontuacao}`);
+            }
+
+            document.querySelectorAll('.premio-container').forEach(p => p.classList.remove('ativo'));
+
+            const premio = document.getElementById('premio' + numeroAtual);
+            if (premio) {
+                premio.classList.add('ativo');
+                premio.setAttribute('role', 'alert');
+                premio.setAttribute('aria-live', 'polite');
+                
+                // Se há prêmio, espera 2 segundos para o usuário ver, sobe, e depois muda de página
+                setTimeout(() => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                    setTimeout(() => {
+                        if (numeroAtual < totalPaginas) {
+                            mostrarPagina(numeroAtual + 1);
+                        }
+                    }, 400);
+                }, 1500);
+            } else {
+                // Se não há prêmio, sobe imediatamente e muda de página
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                setTimeout(() => {
+                    if (numeroAtual < totalPaginas) {
+                        mostrarPagina(numeroAtual + 1);
+                    }
+                }, 300);
+            }
+
+            const step = document.getElementById('step' + numeroAtual);
+            if (step) {
+                step.classList.add('completed');
+            }
+
+            atualizarProgresso();
+            salvarProgresso();
+        }
+
+        function voltarPagina(numeroAtual) {
+            if (numeroAtual > 1) {
+                mostrarPagina(numeroAtual - 1);
+            }
+        }
+
+        function voltarParaEtapa(numero) {
+            if (numero <= paginaAtual) {
+                mostrarPagina(numero);
+            } else {
+                alert('⚠️ Você precisa completar as etapas anteriores primeiro.');
+            }
+        }
+
+        // ============================================
+        // VALIDAÇÃO
+        // ============================================
+
+        function validarPagina(numero) {
+            switch(numero) {
+                case 1:
+                    const allConsentimentos = document.getElementById('consentimento1').checked &&
+                           document.getElementById('consentimento2').checked &&
+                           document.getElementById('consentimento3').checked &&
+                           document.getElementById('consentimento4').checked;
+                    if (!allConsentimentos) {
+                        mostrarErroValidacao('Por favor, confirme TODOS os consentimentos antes de continuar.');
+                    }
+                    return allConsentimentos;
+                
+                case 2:
+                    const nome = document.getElementById('nomeCompleto').value.trim();
+                    const email = document.getElementById('email').value.trim();
+                    const telefone = document.getElementById('telefone').value.trim();
+                    const diagnostico = document.getElementById('diagnostico').value.trim();
+                    const dataAlta = document.getElementById('dataAlta').value;
+                    const terapeuta = document.getElementById('terapeuta').value.trim();
+
+                    if (!nome) {
+                        mostrarErroValidacao('❌ Nome completo é obrigatório.');
+                        return false;
+                    }
+                    if (!email) {
+                        mostrarErroValidacao('❌ Email é obrigatório.');
+                        return false;
+                    }
+                    if (!validarEmail(email)) {
+                        mostrarErroValidacao('❌ Email inválido. Use formato: seu@email.com');
+                        return false;
+                    }
+                    if (!telefone) {
+                        mostrarErroValidacao('❌ Telefone é obrigatório.');
+                        return false;
+                    }
+                    if (!diagnostico) {
+                        mostrarErroValidacao('❌ Diagnóstico/Condição é obrigatório.');
+                        return false;
+                    }
+                    if (!dataAlta) {
+                        mostrarErroValidacao('❌ Data da alta é obrigatória.');
+                        return false;
+                    }
+                    if (!terapeuta) {
+                        mostrarErroValidacao('❌ Nome do terapeuta é obrigatório.');
+                        return false;
+                    }
+                    return true;
+                
+                default:
+                    return true;
+            }
+        }
+
+        function mostrarErroValidacao(mensagem) {
+            const alerta = document.createElement('div');
+            alerta.style.cssText = 'position: fixed; top: 80px; left: 50%; transform: translateX(-50%); background: #ff4444; color: white; padding: 15px 25px; border-radius: 8px; z-index: 2000; box-shadow: 0 4px 12px rgba(0,0,0,0.3); font-weight: 600; max-width: 90%; animation: slideDown 0.3s ease;';
+            alerta.textContent = mensagem;
+            document.body.appendChild(alerta);
+            
+            setTimeout(() => {
+                alerta.remove();
+            }, 5000);
+        }
+
+        function validarEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
+        }
+
+        // ============================================
+        // PROGRESSO
+        // ============================================
+
+        function inicializarProgressoSteps() {
+            const container = document.getElementById('progressoSteps');
+            container.innerHTML = '';
+            
+            for (let i = 1; i <= totalPaginas; i++) {
+                const step = document.createElement('div');
+                step.className = 'progress-step';
+                step.textContent = i;
+                step.id = 'step' + i;
+                step.onclick = () => voltarParaEtapa(i);
+                step.setAttribute('role', 'button');
+                step.setAttribute('aria-label', `Etapa ${i} de ${totalPaginas}`);
+                step.setAttribute('tabindex', '0');
+                
+                step.addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        voltarParaEtapa(i);
+                    }
+                });
+                
+                container.appendChild(step);
+            }
+        }
+
+        function atualizarProgresso() {
+            const porcentagem = Math.round((etapasCompletadas.size / totalPaginas) * 100);
+            
+            const progressBar = document.getElementById('progressBar');
+            if (progressBar) {
+                progressBar.style.width = porcentagem + '%';
+            }
+
+            const progressLabel = document.getElementById('progressLabel');
+            if (progressLabel) {
+                progressLabel.setAttribute('data-percentage', porcentagem + '%');
+            }
+
+            document.querySelectorAll('.progress-step').forEach(step => {
+                step.classList.remove('active');
+            });
+            
+            const stepAtual = document.getElementById('step' + paginaAtual);
+            if (stepAtual) {
+                stepAtual.classList.add('active');
+            }
+        }
+
+        function restaurarPremios() {
+            etapasCompletadas.forEach(etapa => {
+                const step = document.getElementById('step' + etapa);
+                if (step) {
+                    step.classList.add('completed');
+                }
+            });
+        }
+
+        // ============================================
+        // FINALIZAÇÃO
+        // ============================================
+
+        function finalizarEMostrarResumo() {
+            if (!etapasCompletadas.has(8)) {
+                pontuacao += pontosPorEtapa;
+                etapasCompletadas.add(8);
+            }
+
+            document.querySelectorAll('.premio-container').forEach(p => p.classList.remove('ativo'));
+
+            const premio8 = document.getElementById('premio8');
+            if (premio8) {
+                premio8.classList.add('ativo');
+            }
+
+            const step8 = document.getElementById('step8');
+            if (step8) {
+                step8.classList.add('completed');
+            }
+
+            const progressBar = document.getElementById('progressBar');
+            if (progressBar) {
+                progressBar.classList.add('completed');
+            }
+
+            // Atualizar progresso para mostrar 100%
+            atualizarProgresso();
+            salvarProgresso();
+
+            setTimeout(() => {
+                mostrarResumo();
+            }, 2000);
+        }
+
+        function mostrarResumo() {
+            document.querySelectorAll('.pagina').forEach(p => p.classList.remove('ativa'));
+
+            const resumo = document.getElementById('resumoFinal');
+            if (resumo) {
+                resumo.classList.add('ativo');
+                resumo.style.display = 'block';
+            }
+
+            const pontuacaoFinal = document.getElementById('pontuacaoFinal');
+            if (pontuacaoFinal) {
+                pontuacaoFinal.textContent = pontuacao;
+            }
+
+            gerarGridPremios();
+            salvarProgresso();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function gerarGridPremios() {
+            const container = document.getElementById('todosPremios');
+            if (!container) return;
+
+            container.innerHTML = '';
+
+            // Organização em pirâmide conforme solicitado:
+            // Topo: Troféu (Jornada Completa - índice 7)
+            // Meio: Alertas, Soluções, Metas (índices 4, 5, 6)
+            // Base: Consentimento, Dados, Mindfulness, Experiências (índices 0, 1, 2, 3)
+            const premiosOrdenados = [
+                [7],           // Topo: Jornada Completa (troféu)
+                [4, 5, 6],     // Meio: Alertas Identificados, Soluções Planejadas, Metas Estabelecidas
+                [0, 1, 2, 3]   // Base: Consentimento, Dados, Mindfulness, Experiências
+            ];
+
+            premiosOrdenados.forEach((linha) => {
+                const linhaDiv = document.createElement('div');
+                linhaDiv.className = 'premios-linha';
+
+                linha.forEach((indice) => {
+                    const premio = premiosConfig[indice];
+                    const div = document.createElement('div');
+                    div.className = 'premio-item';
+                    
+                    if (etapasCompletadas.has(premio.id)) {
+                        div.classList.add('conquistado');
+                    }
+
+                    div.innerHTML = `
+                        <div class="premio-item-icon">${premio.icone}</div>
+                        <div class="premio-item-texto">${premio.nome}</div>
+                        <div class="premio-item-pontos">+${pontosPorEtapa} pts</div>
+                    `;
+
+                    div.setAttribute('role', 'article');
+                    div.setAttribute('aria-label', `Prêmio: ${premio.nome}`);
+
+                    linhaDiv.appendChild(div);
+                });
+
+                container.appendChild(linhaDiv);
+            });
+        }
+
+        // ============================================
+        // SALVAMENTO
+        // ============================================
+
+        async function salvarDadosSessao() {
+            try {
+                const dados = {
+                    nome: document.getElementById('nome')?.value || '',
+                    email: document.getElementById('email')?.value || '',
+                    idade: document.getElementById('idade')?.value || '',
+                    dataInicio: document.getElementById('dataInicio')?.value || '',
+                    pontuacao: pontuacao,
+                    etapasCompletadas: Array.from(etapasCompletadas),
+                    dataFinalizacao: new Date().toISOString(),
+                    versao: '3.0-Premium-Final'
+                };
+
+                localStorage.setItem('royaltyPreventionData', JSON.stringify(dados));
+
+                console.log('✅ Dados salvos com sucesso:', dados);
+                alert('✅ Seus dados foram salvos com sucesso!');
+
+            } catch (error) {
+                console.error('❌ Erro ao salvar dados:', error);
+                alert('⚠️ Ocorreu um erro ao salvar seus dados. Por favor, tente novamente.');
+            }
+        }
+
+        // ============================================
+        // AUTO-SAVE
+        // ============================================
+
+        window.addEventListener('beforeunload', function(e) {
+            salvarProgresso();
+            
+            if (document.getElementById('resumoFinal').classList.contains('ativo')) {
+                salvarDadosSessao();
+            }
+        });
+
+        
+        // ============================================
+        // CÁLCULO AUTOMÁTICO DE IDADE
+        // ============================================
+
+        function calcularIdade() {
+            const dataNascimento = document.getElementById('dataNascimento').value;
+            const idadeInput = document.getElementById('idade');
+
+            if (!dataNascimento) {
+                idadeInput.value = '';
+                return;
+            }
+
+            const data = new Date(dataNascimento);
+            const hoje = new Date();
+            let idade = hoje.getFullYear() - data.getFullYear();
+            const mes = hoje.getMonth() - data.getMonth();
+
+            if (mes < 0 || (mes === 0 && hoje.getDate() < data.getDate())) {
+                idade--;
+            }
+
+            idadeInput.value = idade >= 0 ? idade : '';
+        }
+
+
+        console.log('🎮 Sistema Royalty Families v3.0 Premium - Inicializado ✅');
+
+        // ============================================
+        // COLETA DE TODOS OS DADOS DO FORMULÁRIO
+        // ============================================
+
+        function coletarTodosDados() {
+            // Coletar sinais de alerta (checkboxes)
+            const sinaisAlerta = [];
+            for (let i = 1; i <= 10; i++) {
+                const checkbox = document.getElementById(`sinal${i}`);
+                if (checkbox && checkbox.checked) {
+                    sinaisAlerta.push(`Sinal ${i}: Marcado`);
+                }
+            }
+
+            // Coletar tabela Mindfulness
+            const mindfulnessData = [];
+            const dias = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+            const nomesDias = ['Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado', 'Domingo'];
+            dias.forEach((dia, idx) => {
+                const praticou = document.getElementById(`mind${dia}`)?.checked ? 'Sim' : 'Não';
+                const duracao = document.getElementById(`mind${dia}Dur`)?.value || '-';
+                const qualidade = document.getElementById(`mind${dia}Qual`)?.value || '-';
+                mindfulnessData.push(`${nomesDias[idx]}: Praticou=${praticou}, Duração=${duracao}min, Qualidade=${qualidade}/5`);
+            });
+
+            // Coletar opções de resolução de problemas (tabela 5.2)
+            const opcoesSolucao = [];
+            for (let i = 1; i <= 5; i++) {
+                const opcao = document.getElementById(`opcao${i}`)?.value || '';
+                const vant = document.getElementById(`vant${i}`)?.value || '';
+                const desv = document.getElementById(`desv${i}`)?.value || '';
+                if (opcao || vant || desv) {
+                    opcoesSolucao.push(`Opção ${i}: ${opcao} | Vantagens: ${vant} | Desvantagens: ${desv}`);
+                }
+            }
+
+            // Coletar plano de ação (tabela 6.2)
+            const planoAcao = [];
+            for (let i = 1; i <= 5; i++) {
+                const acao = document.getElementById(`acao${i}`)?.value || '';
+                const data = document.getElementById(`data${i}`)?.value || '';
+                if (acao || data) {
+                    planoAcao.push(`Passo ${i}: ${acao} | Data: ${data}`);
+                }
+            }
+
+            // Coletar dados de valores (tabela 7.3)
+            const forcasDescricao = document.getElementById('forcas')?.value || 'Não preenchido';
+            const identidadeDescricao = document.getElementById('identidade')?.value || 'Não preenchida';
+            const sonhosDescricao = document.getElementById('sonhos')?.value || 'Não preenchidos';
+
+            // Coletar rede de suporte (tabela 7.4)
+            const contatoFam = document.getElementById('contatoFam')?.value || 'Não informado';
+            const telFam = document.getElementById('telFam')?.value || 'Não informado';
+            const contatoAmigo = document.getElementById('contatoAmigo')?.value || 'Não informado';
+            const telAmigo = document.getElementById('telAmigo')?.value || 'Não informado';
+
+            // Resultado do problema (radio)
+            const resultadoProblema = document.querySelector('input[name="resultado_problema"]:checked')?.value || 'Não informado';
+
+            // Obstáculos e estratégias (página 7)
+            const obstaculos = document.getElementById('obstaculos')?.value || 'Não preenchido';
+            const estrategias = document.getElementById('estrategias')?.value || 'Não preenchida';
+
+            const dados = {
+                // Página 2: Dados Pessoais
+                nomeCompleto: document.getElementById('nomeCompleto')?.value || 'Não informado',
+                email: document.getElementById('email')?.value || 'Não informado',
+                telefone: document.getElementById('telefone')?.value || 'Não informado',
+                dataNascimento: document.getElementById('dataNascimento')?.value || 'Não informado',
+                idade: document.getElementById('idade')?.value || 'Não calculada',
+                profissao: document.getElementById('profissao')?.value || 'Não informada',
+                diagnostico: document.getElementById('diagnostico')?.value || 'Não informado',
+                dataAlta: document.getElementById('dataAlta')?.value || 'Não informada',
+                terapeuta: document.getElementById('terapeuta')?.value || 'Não informado',
+
+                // Página 3: Mindfulness
+                horarioMindfulness: document.getElementById('horario_mindfulness')?.value || 'Não informado',
+                reflexaoMindfulness: document.getElementById('reflexao')?.value || 'Não preenchida',
+                registroMindfulness: mindfulnessData.join(' | '),
+
+                // Página 4: Experiências Positivas
+                momento1Descricao: document.getElementById('momento1Desc')?.value || 'Não informado',
+                momento1Pensamento: document.getElementById('momento1Pens')?.value || 'Não preenchido',
+                momento1Sentimento: document.getElementById('momento1Sent')?.value || 'Não preenchido',
+                momento2Descricao: document.getElementById('momento2Desc')?.value || 'Não informado',
+                momento2Pensamento: document.getElementById('momento2Pens')?.value || 'Não preenchido',
+                momento2Sentimento: document.getElementById('momento2Sent')?.value || 'Não preenchido',
+                momento3Descricao: document.getElementById('momento3Desc')?.value || 'Não informado',
+                momento3Pensamento: document.getElementById('momento3Pens')?.value || 'Não preenchido',
+                momento3Sentimento: document.getElementById('momento3Sent')?.value || 'Não preenchido',
+                
+                // Experiências Positivas Vividas
+                exp1: document.getElementById('exp1')?.value || 'Não informada',
+                contrib1: document.getElementById('contrib1')?.value || 'Não informada',
+                forca1: document.getElementById('forca1')?.value || 'Não informada',
+                exp2: document.getElementById('exp2')?.value || 'Não informada',
+                contrib2: document.getElementById('contrib2')?.value || 'Não informada',
+                forca2: document.getElementById('forca2')?.value || 'Não informada',
+                exp3: document.getElementById('exp3')?.value || 'Não informada',
+                contrib3: document.getElementById('contrib3')?.value || 'Não informada',
+                forca3: document.getElementById('forca3')?.value || 'Não informada',
+                exp4: document.getElementById('exp4')?.value || 'Não informada',
+                contrib4: document.getElementById('contrib4')?.value || 'Não informada',
+                forca4: document.getElementById('forca4')?.value || 'Não informada',
+                exp5: document.getElementById('exp5')?.value || 'Não informada',
+                contrib5: document.getElementById('contrib5')?.value || 'Não informada',
+                forca5: document.getElementById('forca5')?.value || 'Não informada',
+                conclusao: document.getElementById('conclusao')?.value || 'Não preenchida',
+
+                // Página 5: Sinais de Alerta
+                sinaisAlertaMarcados: sinaisAlerta.length > 0 ? sinaisAlerta.join(' | ') : 'Nenhum sinal marcado',
+                evento1: document.getElementById('evento_1')?.value || 'Não informado',
+                evento2: document.getElementById('evento_2')?.value || 'Não informado',
+                evento3: document.getElementById('evento_3')?.value || 'Não informado',
+                mindfulnessStop: document.getElementById('mindfulness_stop')?.value || 'Não informado',
+                exercicioFisico: document.getElementById('exercicio_fisico')?.value || 'Não informado',
+                ajudaAcompanhamento: document.getElementById('ajudar_acompanhar')?.value || 'Não informado',
+                localSeguro: document.getElementById('local_seguro')?.value || 'Não informado',
+
+                // Página 6: Resolução de Problemas
+                problema: document.getElementById('problema')?.value || 'Não informado',
+                resultadoProblema: resultadoProblema,
+                acaoNecessaria: document.getElementById('acao_necessaria')?.value || 'Não preenchida',
+                opcoesSolucao: opcoesSolucao.length > 0 ? opcoesSolucao.join(' | ') : 'Nenhuma opção preenchida',
+                solucaoEscolhida: document.getElementById('solucao_escolhida')?.value || 'Não preenchida',
+
+                // Página 7: SMART e Plano de Ação
+                metaDescricao: document.getElementById('meta_descricao')?.value || 'Não informada',
+                metaMensuravel: document.getElementById('meta_mensuravel')?.value || 'Não informada',
+                metaAlcancavel: document.getElementById('meta_alcancavel')?.value || 'Não informada',
+                metaRelevancia: document.getElementById('meta_relevancia')?.value || 'Não informada',
+                metaPrazo: document.getElementById('meta_prazo')?.value || 'Não informado',
+                planoAcao: planoAcao.length > 0 ? planoAcao.join(' | ') : 'Nenhuma ação preenchida',
+                obstaculos: obstaculos,
+                estrategias: estrategias,
+
+                // Página 8: Valores
+                sentimentoSemana: document.getElementById('sentimento_semana')?.value || 'Não informado',
+                atividadesAnteriores: document.getElementById('atividades_anteriores')?.value || 'Não informado',
+                aprenderExperimentar: document.getElementById('aprender_experimentar')?.value || 'Não informado',
+                iniciativasMinhas: document.getElementById('iniciativas_minhas')?.value || 'Não informado',
+                forcasMais: document.getElementById('forcas_mais')?.value || 'Não informado',
+                forcasMenos: document.getElementById('forcas_menos')?.value || 'Não informado',
+                forcasDesejo: document.getElementById('forcas_desejo')?.value || 'Não informado',
+                forcasDescricao: forcasDescricao,
+                identidadeDescricao: identidadeDescricao,
+                sonhosDescricao: sonhosDescricao,
+                contatoPsi: document.getElementById('contatoPsi')?.value || 'Não informado',
+                telPsi: document.getElementById('telPsi')?.value || 'Não informado',
+                contatoFam: contatoFam,
+                telFam: telFam,
+                contatoAmigo: contatoAmigo,
+                telAmigo: telAmigo,
+                pontosFortess: document.getElementById('pontos_fortes')?.value || 'Não informado',
+                desafios: document.getElementById('desafios')?.value || 'Não informado',
+                bemEstarGeral: document.getElementById('bem_estar_geral')?.value || 'Não informado',
+
+                pontuacao: pontuacao,
+                dataFinalizacao: new Date().toLocaleString('pt-BR'),
+                versao: '3.0-Premium-Final'
+            };
+
+            return dados;
+        }
+
+        // ============================================
+        // GERAR PDF
+        // ============================================
+
+        function gerarPDF() {
+            const dados = coletarTodosDados();
+            
+            const htmlContent = `
+                <!DOCTYPE html>
+                <html lang="pt-BR">
+                <head>
+                    <meta charset="UTF-8">
+                    <title>Relatório - Guia de Prevenção Royalty Families</title>
+                    <style>
+                        * {
+                            margin: 0;
+                            padding: 0;
+                            box-sizing: border-box;
+                        }
+                        body {
+                            font-family: 'Montserrat', Arial, sans-serif;
+                            color: #14214D;
+                            line-height: 1.6;
+                            background-color: #f5f5f5;
+                            width: 100%;
+                            max-width: 100%;
+                            overflow-x: hidden;
+                        }
+                        .page-break {
+                            page-break-after: always;
+                            margin: 0;
+                        }
+                        .capa {
+                            text-align: center;
+                            background: #FFFFFF;
+                            color: #14214D;
+                            padding: 30px 25px;
+                            margin: 0;
+                            min-height: auto;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            page-break-after: always;
+                            width: 100%;
+                            box-sizing: border-box;
+                        }
+                        .logo-capa {
+                            margin-bottom: 30px;
+                            max-width: 300px;
+                            height: auto;
+                        }
+                        .logo-capa img {
+                            max-width: 100%;
+                            height: auto;
+                            width: 280px;
+                            object-fit: contain;
+                        }
+                        .titulo-capa {
+                            font-size: 36px;
+                            font-weight: 700;
+                            color: #14214D;
+                            margin-bottom: 20px;
+                            font-family: 'Cinzel', serif;
+                        }
+                        .subtitulo-capa {
+                            font-size: 18px;
+                            color: #051F5A;
+                            margin-bottom: 60px;
+                            font-weight: 600;
+                        }
+                        .consentimento {
+                            background: white;
+                            padding: 40px;
+                            border-radius: 8px;
+                            text-align: left;
+                            margin-bottom: 20px;
+                            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+                        }
+                        .consentimento h3 {
+                            color: #051F5A;
+                            margin-bottom: 15px;
+                            font-size: 16px;
+                        }
+                        .consentimento-item {
+                            margin-bottom: 15px;
+                            font-size: 13px;
+                            line-height: 1.6;
+                        }
+                        .checkbox-marked {
+                            color: #B8860B;
+                            font-weight: 700;
+                            margin-right: 8px;
+                        }
+                        .header {
+                            text-align: center;
+                            background: linear-gradient(135deg, #051F5A 0%, #0A1127 100%);
+                            color: white;
+                            padding: 20px 18px;
+                            margin: 0 0 20px 0;
+                            border-bottom: 3px solid #B8860B;
+                            width: 100%;
+                            box-sizing: border-box;
+                            page-break-inside: avoid;
+                        }
+                        .header h1 {
+                            margin: 0;
+                            font-size: 20px;
+                            font-family: 'Cinzel', serif;
+                            word-wrap: break-word;
+                            overflow-wrap: break-word;
+                        }
+                        .header p {
+                            margin: 10px 0 0 0;
+                            font-size: 14px;
+                        }
+                        .container {
+                            max-width: 100%;
+                            margin: 0;
+                            padding: 18px 20px;
+                            width: 100%;
+                            box-sizing: border-box;
+                            page-break-inside: avoid;
+                        }
+                        .section {
+                            background: white;
+                            padding: 18px;
+                            margin-bottom: 18px;
+                            border-left: 4px solid #B8860B;
+                            border-radius: 4px;
+                            page-break-inside: avoid;
+                            box-shadow: 0 2px 8px rgba(20, 33, 77, 0.08);
+                            width: 100%;
+                            box-sizing: border-box;
+                        }
+                        .section h2 {
+                            color: #051F5A;
+                            border-bottom: 2px solid #B8860B;
+                            padding-bottom: 8px;
+                            margin-top: 0;
+                            margin-bottom: 12px;
+                            font-size: 14px;
+                            font-family: 'Cinzel', serif;
+                            word-wrap: break-word;
+                        }
+                        .section h3 {
+                            color: #14214D;
+                            margin-top: 20px;
+                            margin-bottom: 15px;
+                            font-size: 15px;
+                        }
+                        .field {
+                            margin-bottom: 18px;
+                        }
+                        .label {
+                            font-weight: 700;
+                            color: #051F5A;
+                            font-size: 12px;
+                            text-transform: uppercase;
+                            letter-spacing: 0.5px;
+                            margin-bottom: 6px;
+                        }
+                        .value {
+                            color: #14214D;
+                            font-size: 11px;
+                            padding: 8px;
+                            background-color: #F8F9FB;
+                            border-radius: 4px;
+                            white-space: pre-wrap;
+                            word-wrap: break-word;
+                            overflow-wrap: break-word;
+                            min-height: 25px;
+                            line-height: 1.3;
+                            border-left: 3px solid #B8860B;
+                        }
+                        .table-data {
+                            width: 100%;
+                            border-collapse: collapse;
+                            margin: 10px 0;
+                            font-size: 10px;
+                        }
+                        .table-data th {
+                            background: #051F5A;
+                            color: white;
+                            padding: 6px 8px;
+                            text-align: left;
+                            font-weight: 700;
+                            border-bottom: 2px solid #B8860B;
+                        }
+                        .table-data td {
+                            padding: 6px 8px;
+                            border-bottom: 1px solid #E9E9E9;
+                            font-size: 10px;
+                            word-wrap: break-word;
+                            overflow-wrap: break-word;
+                        }
+                        .table-data tr:nth-child(even) {
+                            background: #F8F9FB;
+                        }
+                        .footer {
+                            text-align: center;
+                            padding: 20px;
+                            color: #7D86A6;
+                            font-size: 9px;
+                            border-top: 2px solid #ACB4D3;
+                            margin-top: 20px;
+                            width: 100%;
+                            box-sizing: border-box;
+                        }
+                        .score-box {
+                            font-size: 16px;
+                            font-weight: 700;
+                            color: white;
+                            background: linear-gradient(135deg, #B8860B 0%, #9b7d0e 100%);
+                            padding: 18px;
+                            border-radius: 8px;
+                            text-align: center;
+                            margin: 18px 0;
+                            box-shadow: 0 4px 12px rgba(184, 134, 11, 0.3);
+                        }
+                        .conclusao-titulo {
+                            color: #051F5A;
+                            font-size: 18px;
+                            text-align: center;
+                            margin: 20px 0;
+                            font-family: 'Cinzel', serif;
+                        }
+                        .conclusao-msg {
+                            font-size: 16px;
+                            color: #14214D;
+                            text-align: center;
+                            margin: 20px 0;
+                        }
+                        
+                        /* ============================================
+                           RESPONSIVIDADE PARA MOBILE
+                           ============================================ */
+                        @media (max-width: 768px) {
+                            body {
+                                font-size: 13px;
+                            }
+                            
+                            .container {
+                                padding: 15px;
+                                max-width: 100%;
+                            }
+                            
+                            .header h1 {
+                                font-size: 18px;
+                                margin-bottom: 15px;
+                            }
+                            
+                            .section h2 {
+                                font-size: 14px;
+                                margin-top: 15px;
+                                margin-bottom: 10px;
+                            }
+                            
+                            .field {
+                                margin-bottom: 12px;
+                            }
+                            
+                            .label {
+                                font-size: 11px;
+                                margin-bottom: 4px;
+                            }
+                            
+                            .value {
+                                font-size: 10px;
+                                padding: 6px;
+                                min-height: 20px;
+                            }
+                            
+                            .table-data {
+                                font-size: 9px;
+                            }
+                            
+                            .table-data th {
+                                padding: 4px 6px;
+                                font-size: 9px;
+                            }
+                            
+                            .table-data td {
+                                padding: 4px 6px;
+                                font-size: 9px;
+                            }
+                            
+                            .score-box {
+                                font-size: 14px;
+                                padding: 14px;
+                                margin: 14px 0;
+                            }
+                            
+                            .conclusao-titulo {
+                                font-size: 16px;
+                                margin: 15px 0;
+                            }
+                            
+                            .conclusao-msg {
+                                font-size: 14px;
+                                margin: 15px 0;
+                            }
+                            
+                            .logo-capa {
+                                margin-bottom: 20px;
+                            }
+                            
+                            .logo-capa img {
+                                max-width: 200px;
+                                width: 100%;
+                                height: auto;
+                            }
+                            
+                            .titulo-capa {
+                                font-size: 28px;
+                            }
+                            
+                            .subtitulo-capa {
+                                font-size: 14px;
+                                margin-bottom: 40px;
+                            }
+                            
+                            .consentimento {
+                                margin-top: 20px;
+                                padding: 15px;
+                            }
+                            
+                            .consentimento h3 {
+                                font-size: 12px;
+                                margin-bottom: 12px;
+                            }
+                            
+                            .consentimento-item {
+                                font-size: 10px;
+                                margin-bottom: 8px;
+                            }
+                            
+                            .footer {
+                                padding: 15px;
+                                font-size: 8px;
+                                margin-top: 15px;
+                            }
+                        }
+                        
+                        @media (max-width: 480px) {
+                            body {
+                                font-size: 12px;
+                            }
+                            
+                            .container {
+                                padding: 12px;
+                            }
+                            
+                            .header h1 {
+                                font-size: 16px;
+                            }
+                            
+                            .section h2 {
+                                font-size: 13px;
+                                margin-top: 12px;
+                                margin-bottom: 8px;
+                            }
+                            
+                            .field {
+                                margin-bottom: 10px;
+                            }
+                            
+                            .label {
+                                font-size: 10px;
+                            }
+                            
+                            .value {
+                                font-size: 9px;
+                                padding: 5px;
+                            }
+                            
+                            .table-data {
+                                font-size: 8px;
+                            }
+                            
+                            .table-data th {
+                                padding: 3px 4px;
+                                font-size: 8px;
+                            }
+                            
+                            .table-data td {
+                                padding: 3px 4px;
+                                font-size: 8px;
+                            }
+                            
+                            .score-box {
+                                font-size: 12px;
+                                padding: 12px;
+                            }
+                            
+                            .conclusao-titulo {
+                                font-size: 14px;
+                                margin: 12px 0;
+                            }
+                            
+                            .conclusao-msg {
+                                font-size: 12px;
+                                margin: 12px 0;
+                            }
+                            
+                            .page-break {
+                                margin: 0;
+                                padding: 0;
+                            }
+                        }
+                    </style>
+                </head>
+                <body>
+                    <!-- PÁGINA 1: CAPA + CONSENTIMENTO -->
+                    <div class="capa page-break">
+                        <div class="logo-capa"><img src="logo-royalty.png" alt="Royalty Families Logo"></div>
+                        <div class="subtitulo-capa">Guia de Prevenção de Recaída<br>Saúde Familiar e Empresarial</div>
+                        
+                        <div class="consentimento">
+                            <h3>✅ CONSENTIMENTO E INFORMAÇÕES IMPORTANTES</h3>
+                            <div class="consentimento-item">
+                                <span class="checkbox-marked">☑</span> Concordo que meus dados são protegidos conforme LGPD, GDPR e CCPA
+                            </div>
+                            <div class="consentimento-item">
+                                <span class="checkbox-marked">☑</span> Autorizo o processamento de meus dados pessoais para fins terapêuticos
+                            </div>
+                            <div class="consentimento-item">
+                                <span class="checkbox-marked">☑</span> Entendo que este é um complemento à psicoterapia, não substitui tratamento médico
+                            </div>
+                            <div class="consentimento-item">
+                                <span class="checkbox-marked">☑</span> Concordo em utilizar esta ferramenta de forma ética e responsável
+                            </div>
+                            <div class="consentimento-item">
+                                <span class="checkbox-marked">☑</span> Compreendo que posso deletar meus dados a qualquer momento
+                            </div>
+                            <div class="consentimento-item">
+                                <span class="checkbox-marked">☑</span> Confirmo que li e compreendi todas as informações
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PÁGINA 2: DADOS PESSOAIS -->
+                    <div class="container">
+                        <div class="header">
+                            <h1>📋 SEUS DADOS PESSOAIS</h1>
+                        </div>
+
+                        <div class="section">
+                            <div class="field">
+                                <div class="label">Nome Completo:</div>
+                                <div class="value">${dados.nomeCompleto}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">Email:</div>
+                                <div class="value">${dados.email}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">Telefone/WhatsApp:</div>
+                                <div class="value">${dados.telefone}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">Diagnóstico/Condição:</div>
+                                <div class="value">${dados.diagnostico}</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PÁGINA 3: MINDFULNESS -->
+                    <div class="container page-break">
+                        <div class="header">
+                            <h1>🧘 2. A PRÁTICA DIÁRIA DE MINDFULNESS</h1>
+                            <p>Registro Semanal de Mindfulness</p>
+                        </div>
+                        
+                        <div class="section">
+                            <h3>Registro Semanal de Mindfulness com os Dias que Praticou</h3>
+                            <table class="table-data">
+                                <tr>
+                                    <th>Dia</th>
+                                    <th>Duração (min)</th>
+                                    <th>Qualidade (1-5)</th>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" style="text-align: center; color: #7D86A6;">${dados.registroMindfulness || 'Sem dados'}</td>
+                                </tr>
+                            </table>
+                            
+                            <div class="field">
+                                <div class="label">Reflexão Pessoal: Como mindfulness impactou sua semana?</div>
+                                <div class="value">${dados.reflexaoMindfulness}</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PÁGINA 4: EXPERIÊNCIAS POSITIVAS -->
+                    <div class="container page-break">
+                        <div class="header">
+                            <h1>✨ 3. EXPERIÊNCIAS POSITIVAS</h1>
+                        </div>
+                        
+                        <div class="section">
+                            <h2>3.1 Técnica de Savoring - Momentos para Aproveitar</h2>
+                            
+                            <h3>Momento 1</h3>
+                            <div class="field">
+                                <div class="label">Momento:</div>
+                                <div class="value">${dados.momento1Descricao}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">Pensamento:</div>
+                                <div class="value">${dados.momento1Pensamento}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">Sentimento:</div>
+                                <div class="value">${dados.momento1Sentimento}</div>
+                            </div>
+
+                            <h3>Momento 2</h3>
+                            <div class="field">
+                                <div class="label">Momento:</div>
+                                <div class="value">${dados.momento2Descricao}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">Pensamento:</div>
+                                <div class="value">${dados.momento2Pensamento}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">Sentimento:</div>
+                                <div class="value">${dados.momento2Sentimento}</div>
+                            </div>
+
+                            <h3>Momento 3</h3>
+                            <div class="field">
+                                <div class="label">Momento:</div>
+                                <div class="value">${dados.momento3Descricao}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">Pensamento:</div>
+                                <div class="value">${dados.momento3Pensamento}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">Sentimento:</div>
+                                <div class="value">${dados.momento3Sentimento}</div>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <h2>3.2 Registro de Gratidão - Bênçãos ou Dádivas</h2>
+                            
+                            <h3>Experiência 1</h3>
+                            <div class="field">
+                                <div class="label">Acontecimento Positivo:</div>
+                                <div class="value">${dados.exp1}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">Minha Contribuição:</div>
+                                <div class="value">${dados.contrib1}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">Força de Caráter:</div>
+                                <div class="value">${dados.forca1}</div>
+                            </div>
+
+                            <h3>Experiência 2</h3>
+                            <div class="field">
+                                <div class="label">Acontecimento Positivo:</div>
+                                <div class="value">${dados.exp2}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">Minha Contribuição:</div>
+                                <div class="value">${dados.contrib2}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">Força de Caráter:</div>
+                                <div class="value">${dados.forca2}</div>
+                            </div>
+
+                            <h3>Experiência 3</h3>
+                            <div class="field">
+                                <div class="label">Acontecimento Positivo:</div>
+                                <div class="value">${dados.exp3}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">Minha Contribuição:</div>
+                                <div class="value">${dados.contrib3}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">Força de Caráter:</div>
+                                <div class="value">${dados.forca3}</div>
+                            </div>
+
+                            <h3>Experiência 4</h3>
+                            <div class="field">
+                                <div class="label">Acontecimento Positivo:</div>
+                                <div class="value">${dados.exp4}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">Minha Contribuição:</div>
+                                <div class="value">${dados.contrib4}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">Força de Caráter:</div>
+                                <div class="value">${dados.forca4}</div>
+                            </div>
+
+                            <h3>Experiência 5</h3>
+                            <div class="field">
+                                <div class="label">Acontecimento Positivo:</div>
+                                <div class="value">${dados.exp5}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">Minha Contribuição:</div>
+                                <div class="value">${dados.contrib5}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">Força de Caráter:</div>
+                                <div class="value">${dados.forca5}</div>
+                            </div>
+
+                            <div class="field">
+                                <div class="label">Conclusões a respeito de si: O quanto foi significativo para mim estas experiências e o que me fazem pensar a meu respeito?</div>
+                                <div class="value">${dados.conclusao}</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PÁGINA 5: SINAIS DE ALERTA -->
+                    <div class="container page-break">
+                        <div class="header">
+                            <h1>⚠️ 4. SINAIS DE ALERTA</h1>
+                        </div>
+                        
+                        <div class="section">
+                            <h2>Todos os Sinais Assinalados</h2>
+                            <div class="field">
+                                <div class="label">Sinais de Alerta Marcados:</div>
+                                <div class="value">${dados.sinaisAlertaMarcados}</div>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <h2>4.2 Plano de Emergência</h2>
+                            <div class="field">
+                                <div class="label">Evento 1:</div>
+                                <div class="value">${dados.evento1}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">Evento 2:</div>
+                                <div class="value">${dados.evento2}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">Evento 3:</div>
+                                <div class="value">${dados.evento3}</div>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <h2>4.3 Estratégias de Enfrentamento Imediatas</h2>
+                            <div class="field">
+                                <div class="label">Situações para usar o Mindfulness "STOP":</div>
+                                <div class="value">${dados.mindfulnessStop}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">Exercício ou Atividade Física:</div>
+                                <div class="value">${dados.exercicioFisico}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">Quem pode me ajudar ou me acompanhar:</div>
+                                <div class="value">${dados.ajudaAcompanhamento}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">Local Seguro:</div>
+                                <div class="value">${dados.localSeguro}</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PÁGINA 6: RESOLUÇÃO DE PROBLEMAS -->
+                    <div class="container page-break">
+                        <div class="header">
+                            <h1>🔧 5. RESOLUÇÃO DE PROBLEMAS</h1>
+                        </div>
+                        
+                        <div class="section">
+                            <h2>5.1 Avaliação e Definição do Problema</h2>
+                            <div class="field">
+                                <div class="label">Meu principal desafio nesta semana é (ou foi):</div>
+                                <div class="value">${dados.problema}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">Situação atual:</div>
+                                <div class="value">${dados.resultadoProblema}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">Se não foi resolvido, há algo que devo fazer?</div>
+                                <div class="value">${dados.acaoNecessaria}</div>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <h2>5.2 Análise de Opções</h2>
+                            <div class="field">
+                                <div class="label">Opção / Vantagens / Desvantagens:</div>
+                                <div class="value">${dados.opcoesSolucao}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">Solução Escolhida (ou Síntese de Todas) como OBJETIVO para implementar:</div>
+                                <div class="value">${dados.solucaoEscolhida || dados.solutionChosen || ''}</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PÁGINA 7: ESTRATÉGIA SMART -->
+                    <div class="container page-break">
+                        <div class="header">
+                            <h1>🎯 6. ESTRATÉGIA SMART</h1>
+                        </div>
+                        
+                        <div class="section">
+                            <h2>6.1 Seu Objetivo para esta semana é...</h2>
+                            <div class="field">
+                                <div class="label">(S) Específico:</div>
+                                <div class="value">${dados.metaDescricao}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">(M) Mensurável:</div>
+                                <div class="value">${dados.metaMensuravel}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">(A) Alcançável:</div>
+                                <div class="value">${dados.metaAlcancavel}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">(R) Relevante:</div>
+                                <div class="value">${dados.metaRelevancia}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">(T) Tempo definido:</div>
+                                <div class="value">${dados.metaPrazo}</div>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <h2>6.2 Plano de Ação</h2>
+                            <div class="field">
+                                <div class="label">Ações necessárias / Previsão para concluir:</div>
+                                <div class="value">${dados.planoAcao}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">Obstáculos Previstos:</div>
+                                <div class="value">${dados.obstaculos}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">Estratégias para Superá-los:</div>
+                                <div class="value">${dados.estrategias}</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PÁGINA 8: VALORES E PROPÓSITOS -->
+                    <div class="container page-break">
+                        <div class="header">
+                            <h1>💎 7. CONEXÃO COM SEUS VALORES E PROPÓSITOS</h1>
+                        </div>
+                        
+                        <div class="section">
+                            <h2>7.1 Seu Mapa de Valores</h2>
+                            <div class="field">
+                                <div class="label">Como desejo me sentir ao final desta semana?</div>
+                                <div class="value">${dados.sentimentoSemana}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">Que atividades já me fizeram sentir assim?</div>
+                                <div class="value">${dados.atividadesAnteriores}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">O que posso aprender ou experimentar para me fazer sentir assim?</div>
+                                <div class="value">${dados.aprenderExperimentar}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">Que iniciativas posso tomar para desfrutar algo que gosto?</div>
+                                <div class="value">${dados.iniciativasMinhas}</div>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <h2>7.2 Minhas Forças de Assinatura</h2>
+                            <div class="field">
+                                <div class="label">As Forças que MAIS utilizei esta semana foram:</div>
+                                <div class="value">${dados.forcasMais}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">As Forças que MENOS utilizei esta semana foram:</div>
+                                <div class="value">${dados.forcasMenos}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">As Forças que DESEJO utilizar esta semana são:</div>
+                                <div class="value">${dados.forcasDesejo}</div>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <h2>7.3 Pequenas Coisas que Posso Fazer no Cotidiano</h2>
+                            <div class="field">
+                                <div class="label">Que demonstram ou me aproximem de Minhas Forças de Assinatura / Como Quero Ser Visto / Meus Sonhos a Realizar:</div>
+                                <div class="value">${dados.forcasDescricao}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">Como Desejo Ser Visto:</div>
+                                <div class="value">${dados.identidadeDescricao}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">Meus Sonhos a Realizar:</div>
+                                <div class="value">${dados.sonhosDescricao}</div>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <h2>7.4 Rede de Suporte</h2>
+                            <h3>Contato 1</h3>
+                            <div class="field">
+                                <div class="label">Nome / Relação:</div>
+                                <div class="value">${dados.contatoPsi}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">Telefone:</div>
+                                <div class="value">${dados.telPsi}</div>
+                            </div>
+
+                            <h3>Contato 2</h3>
+                            <div class="field">
+                                <div class="label">Nome / Relação:</div>
+                                <div class="value">${dados.contatoFam}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">Telefone:</div>
+                                <div class="value">${dados.telFam}</div>
+                            </div>
+
+                            <h3>Contato 3</h3>
+                            <div class="field">
+                                <div class="label">Nome / Relação:</div>
+                                <div class="value">${dados.contatoAmigo}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">Telefone:</div>
+                                <div class="value">${dados.telAmigo}</div>
+                            </div>
+
+                            <div class="field">
+                                <div class="label">Pontos Fortes (O que funcionou bem?):</div>
+                                <div class="value">${dados.pontosFortess}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">Desafios Enfrentados (O que foi difícil?):</div>
+                                <div class="value">${dados.desafios}</div>
+                            </div>
+                            <div class="field">
+                                <div class="label">Bem-estar Geral (0-10):</div>
+                                <div class="value">${dados.bemEstarGeral}/10</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PÁGINA 9: CONCLUSÃO FINAL -->
+                    <div class="container page-break">
+                        <div style="text-align: center; padding: 40px 20px;">
+                            <div class="conclusao-titulo">🎉 PARABÉNS!</div>
+                            <div class="conclusao-msg">Você finalizou com êxito o Guia de Prevenção Royalty Families!</div>
+                            <div class="score-box">Sua pontuação final: ${dados.pontuacao} Pontos</div>
+                        </div>
+                    </div>
+
+                    <!-- PÁGINA 10: SUAS CONQUISTAS -->
+                    <div class="container page-break">
+                        <div style="text-align: center; padding: 40px 20px;">
+                            <h1 style="color: #14214D; margin-bottom: 40px; font-size: 2rem;">🏆 Suas Conquistas</h1>
+                            
+                            <div style="text-align: center; margin: 30px 0;">
+                                <p style="font-size: 16px; color: #14214D; margin-bottom: 20px;"><strong>Troféu Final</strong></p>
+                                <div style="font-size: 72px; margin-bottom: 20px;">🏆</div>
+                                <p style="font-size: 14px; color: #051F5A;"><strong>Jornada Completa</strong></p>
+                            </div>
+
+                            <div style="text-align: center; margin: 40px 0;">
+                                <p style="font-size: 14px; color: #14214D; margin-bottom: 15px;"><strong>Etapas Anteriores</strong></p>
+                                <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
+                                    <div>
+                                        <div style="font-size: 48px; margin-bottom: 8px;">🏅</div>
+                                        <p style="font-size: 12px; color: #051F5A;"><strong>Alertas Identificados</strong></p>
+                                    </div>
+                                    <div>
+                                        <div style="font-size: 48px; margin-bottom: 8px;">💡</div>
+                                        <p style="font-size: 12px; color: #051F5A;"><strong>Soluções Planejadas</strong></p>
+                                    </div>
+                                    <div>
+                                        <div style="font-size: 48px; margin-bottom: 8px;">👑</div>
+                                        <p style="font-size: 12px; color: #051F5A;"><strong>Metas Estabelecidas</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="text-align: center; margin: 40px 0;">
+                                <p style="font-size: 14px; color: #14214D; margin-bottom: 15px;"><strong>Primeiras Etapas</strong></p>
+                                <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
+                                    <div>
+                                        <div style="font-size: 48px; margin-bottom: 8px;">⭐</div>
+                                        <p style="font-size: 12px; color: #051F5A;"><strong>Consentimento Confirmado</strong></p>
+                                    </div>
+                                    <div>
+                                        <div style="font-size: 48px; margin-bottom: 8px;">🎗️</div>
+                                        <p style="font-size: 12px; color: #051F5A;"><strong>Dados Registrados</strong></p>
+                                    </div>
+                                    <div>
+                                        <div style="font-size: 48px; margin-bottom: 8px;">🧘</div>
+                                        <p style="font-size: 12px; color: #051F5A;"><strong>Mindfulness Iniciado</strong></p>
+                                    </div>
+                                    <div>
+                                        <div style="font-size: 48px; margin-bottom: 8px;">🌟</div>
+                                        <p style="font-size: 12px; color: #051F5A;"><strong>Experiências Positivas</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="background: #F8F9FB; padding: 25px; border-radius: 12px; margin: 40px 0; border-left: 4px solid #B8860B;">
+                                <p style="font-size: 14px; color: #14214D; font-weight: 700; margin-bottom: 15px;">💾 Seus dados foram registrados com segurança</p>
+                                <p style="font-size: 11px; color: #051F5A; line-height: 1.6; margin-bottom: 12px;">Uma cópia de suas respostas foi enviada para nossa base de dados HIPAA-compliant, permitindo acompanhamento profissional personalizado sempre que você agende uma consulta, aprimoramento dos nossos serviços e avanços em pesquisas científicas.</p>
+                                <p style="font-size: 11px; color: #051F5A; margin-bottom: 8px;"><strong>📧 Contato:</strong> psicologoluisbernardo@gmail.com</p>
+                                <p style="font-size: 11px; color: #051F5A;"><strong>⚖️ Confidencialidade:</strong> Garantida por sigilo profissional e conformidade LGPD/GDPR/CCPA</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer">
+                        <p><strong>Gerado em:</strong> ${dados.dataFinalizacao}</p>
+                        <p><strong>Psicólogo responsável:</strong> Luis Antonio Silva Bernardo | CRP 19/004142</p>
+                        <p>Confidencialidade Garantida | Proteção de Dados (LGPD, GDPR, CCPA)</p>
+                        <p>© 2025 Royalty Families. Todos os direitos reservados.</p>
+                    </div>
+                </body>
+                </html>
+            `;
+
+            return htmlContent;
+        }
+
+        // ============================================
+        // GERAR XLSX
+        // ============================================
+
+        function gerarXLSX() {
+            const dados = coletarTodosDados();
+            
+            const ws_data = [
+                ['GUIA DE PREVENÇÃO ROYALTY FAMILIES - RELATÓRIO DE AUTOMONITORAMENTO'],
+                [],
+                ['CONSENTIMENTO E INFORMAÇÕES IMPORTANTES'],
+                ['✓ Concordo que meus dados são protegidos conforme LGPD, GDPR e CCPA'],
+                ['✓ Autorizo o processamento de meus dados pessoais para fins terapêuticos'],
+                ['✓ Entendo que este é um complemento à psicoterapia, não substitui tratamento médico'],
+                [],
+                ['1. SEUS DADOS PESSOAIS'],
+                ['Campo', 'Valor'],
+                ['Nome Completo', dados.nomeCompleto],
+                ['Email', dados.email],
+                ['Telefone/WhatsApp', dados.telefone],
+                ['Diagnóstico/Condição', dados.diagnostico],
+                [],
+                ['2. A PRÁTICA DIÁRIA DE MINDFULNESS'],
+                ['Registro Semanal', dados.registroMindfulness],
+                ['Reflexão Pessoal', dados.reflexaoMindfulness],
+                [],
+                ['3. EXPERIÊNCIAS POSITIVAS'],
+                ['3.1 SAVORING - Momento 1', dados.momento1Descricao],
+                ['Pensamento', dados.momento1Pensamento],
+                ['Sentimento', dados.momento1Sentimento],
+                ['3.1 SAVORING - Momento 2', dados.momento2Descricao],
+                ['Pensamento', dados.momento2Pensamento],
+                ['Sentimento', dados.momento2Sentimento],
+                ['3.1 SAVORING - Momento 3', dados.momento3Descricao],
+                ['Pensamento', dados.momento3Pensamento],
+                ['Sentimento', dados.momento3Sentimento],
+                [],
+                ['3.2 GRATIDÃO - Experiência 1', dados.exp1],
+                ['Minha Contribuição', dados.contrib1],
+                ['Força de Caráter', dados.forca1],
+                ['3.2 GRATIDÃO - Experiência 2', dados.exp2],
+                ['Minha Contribuição', dados.contrib2],
+                ['Força de Caráter', dados.forca2],
+                ['3.2 GRATIDÃO - Experiência 3', dados.exp3],
+                ['Minha Contribuição', dados.contrib3],
+                ['Força de Caráter', dados.forca3],
+                ['3.2 GRATIDÃO - Experiência 4', dados.exp4],
+                ['Minha Contribuição', dados.contrib4],
+                ['Força de Caráter', dados.forca4],
+                ['3.2 GRATIDÃO - Experiência 5', dados.exp5],
+                ['Minha Contribuição', dados.contrib5],
+                ['Força de Caráter', dados.forca5],
+                ['Conclusões', dados.conclusao],
+                [],
+                ['4. SINAIS DE ALERTA'],
+                ['Sinais Marcados', dados.sinaisAlertaMarcados],
+                ['4.2 - Evento 1', dados.evento1],
+                ['4.2 - Evento 2', dados.evento2],
+                ['4.2 - Evento 3', dados.evento3],
+                ['4.3 - Mindfulness STOP', dados.mindfulnessStop],
+                ['4.3 - Exercício Físico', dados.exercicioFisico],
+                ['4.3 - Quem Pode Ajudar', dados.ajudaAcompanhamento],
+                ['4.3 - Local Seguro', dados.localSeguro],
+                [],
+                ['5. RESOLUÇÃO DE PROBLEMAS'],
+                ['5.1 - Problema Principal', dados.problema],
+                ['5.1 - Situação Atual', dados.resultadoProblema],
+                ['5.1 - Ação Necessária', dados.acaoNecessaria],
+                ['5.2 - Análise de Opções', dados.opcoesSolucao],
+                [],
+                ['6. ESTRATÉGIA SMART'],
+                ['(S) Específico', dados.metaDescricao],
+                ['(M) Mensurável', dados.metaMensuravel],
+                ['(A) Alcançável', dados.metaAlcancavel],
+                ['(R) Relevante', dados.metaRelevancia],
+                ['(T) Tempo Definido', dados.metaPrazo],
+                ['6.2 - Plano de Ação', dados.planoAcao],
+                ['6.2 - Obstáculos', dados.obstaculos],
+                ['6.2 - Estratégias', dados.estrategias],
+                [],
+                ['7. VALORES E PROPÓSITOS'],
+                ['7.1 - Como Desejo Me Sentir', dados.sentimentoSemana],
+                ['7.1 - Atividades que Me Fazem Bem', dados.atividadesAnteriores],
+                ['7.1 - O Que Aprender', dados.aprenderExperimentar],
+                ['7.1 - Iniciativas Minhas', dados.iniciativasMinhas],
+                ['7.2 - Forças Mais Utilizadas', dados.forcasMais],
+                ['7.2 - Forças Menos Utilizadas', dados.forcasMenos],
+                ['7.2 - Forças Desejo Utilizar', dados.forcasDesejo],
+                ['7.3 - Pequenas Coisas', dados.forcasDescricao],
+                ['7.4 - Contato 1', dados.contatoPsi],
+                ['Telefone', dados.telPsi],
+                ['7.4 - Contato 2', dados.contatoFam],
+                ['Telefone', dados.telFam],
+                ['7.4 - Contato 3', dados.contatoAmigo],
+                ['Telefone', dados.telAmigo],
+                ['7.4 - Pontos Fortes', dados.pontosFortess],
+                ['7.4 - Desafios', dados.desafios],
+                ['7.4 - Bem-estar (0-10)', dados.bemEstarGeral],
+                [],
+                ['CONCLUSÃO FINAL'],
+                ['Pontuação Final', dados.pontuacao],
+                ['Como Desejo Ser Visto', dados.identidadeDescricao],
+                ['Meus Sonhos a Realizar', dados.sonhosDescricao],
+                [],
+                ['Data de Finalização', dados.dataFinalizacao],
+                ['Psicólogo Responsável', 'Luis Antonio Silva Bernardo | CRP 19/004142']
+            ];
+
+            const ws = XLSX.utils.aoa_to_sheet(ws_data);
+            ws['!cols'] = [{ wch: 35 }, { wch: 75 }];
+            
+            const wb = XLSX.utils.book_new();
+            XLSX.utils.book_append_sheet(wb, ws, 'Relatório');
+            
+            return wb;
+        }
+
+        // ============================================
+        // INDICADOR DE CARREGAMENTO
+        // ============================================
+
+        function mostrarCarregamento(mensagem = 'Processando...') {
+            let overlay = document.getElementById('loadingOverlay');
+            if (!overlay) {
+                overlay = document.createElement('div');
+                overlay.id = 'loadingOverlay';
+                overlay.style.cssText = 'position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); display: flex; align-items: center; justify-content: center; z-index: 3000;';
+                overlay.innerHTML = '<div style="background: white; padding: 30px 50px; border-radius: 12px; text-align: center; box-shadow: 0 8px 32px rgba(0,0,0,0.3);"><div style="font-size: 24px; margin-bottom: 15px;">⏳</div><div id="loadingMessage" style="font-size: 16px; color: #333; font-weight: 600;">Processando...</div></div>';
+                document.body.appendChild(overlay);
+            }
+            document.getElementById('loadingMessage').textContent = mensagem;
+        }
+
+        function fecharCarregamento() {
+            const overlay = document.getElementById('loadingOverlay');
+            if (overlay) {
+                overlay.remove();
+            }
+        }
+
+        // ============================================
+        // BAIXAR ARQUIVOS LOCALMENTE
+        // ============================================
+
+        function baixarArquivos() {
+            const dados = coletarTodosDados();
+            const nomeArquivo = `Relatorio_Prevencao_${dados.nomeCompleto.replace(/\s+/g, '_')}_${new Date().toISOString().slice(0, 10)}`;
+
+            mostrarCarregamento('📄 Preparando arquivos...');
+
+            // Usar setTimeout para não bloquear a thread
+            setTimeout(() => {
+                try {
+                    // Gerar PDF
+                    const pdfHtml = gerarPDF();
+                    const element = document.createElement('div');
+                    element.innerHTML = pdfHtml;
+                    element.style.cssText = 'width: 800px; margin: 0; padding: 0;';
+                    
+                    // Detectar se é mobile
+                    const isMobile = window.innerWidth < 768;
+                    
+                    const opt = {
+                        margin: isMobile ? 5 : 10,
+                        filename: `${nomeArquivo}.pdf`,
+                        image: { type: 'jpeg', quality: 0.95 },
+                        html2canvas: { 
+                            scale: isMobile ? 1.5 : 2,
+                            useCORS: true,
+                            allowTaint: true,
+                            windowWidth: 800,
+                            windowHeight: element.scrollHeight
+                        },
+                        jsPDF: { orientation: 'portrait', unit: 'mm', format: 'a4' }
+                    };
+
+                    html2pdf().set(opt).from(element).output('blob').then((pdfBlob) => {
+                        setTimeout(() => {
+                            mostrarCarregamento('📊 Gerando planilha...');
+                            
+                            try {
+                                // Gerar XLSX
+                                const wb = gerarXLSX();
+                                const wbout = XLSX.write(wb, { bookType: 'xlsx', type: 'array' });
+                                const xlsxBlob = new Blob([wbout], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
+                                
+                                // Download PDF
+                                const pdfUrl = URL.createObjectURL(pdfBlob);
+                                const pdfLink = document.createElement('a');
+                                pdfLink.href = pdfUrl;
+                                pdfLink.download = `${nomeArquivo}.pdf`;
+                                document.body.appendChild(pdfLink);
+                                pdfLink.click();
+                                document.body.removeChild(pdfLink);
+                                URL.revokeObjectURL(pdfUrl);
+
+                                // Download XLSX
+                                setTimeout(() => {
+                                    const xlsxUrl = URL.createObjectURL(xlsxBlob);
+                                    const xlsxLink = document.createElement('a');
+                                    xlsxLink.href = xlsxUrl;
+                                    xlsxLink.download = `${nomeArquivo}.xlsx`;
+                                    document.body.appendChild(xlsxLink);
+                                    xlsxLink.click();
+                                    document.body.removeChild(xlsxLink);
+                                    URL.revokeObjectURL(xlsxUrl);
+
+                                    fecharCarregamento();
+                                    alert('✅ Sucesso!\n\nArquivos baixados:\n✓ ' + nomeArquivo + '.pdf\n✓ ' + nomeArquivo + '.xlsx\n\nVerifique sua pasta Downloads!');
+                                }, 300);
+                            } catch (err) {
+                                fecharCarregamento();
+                                alert('⚠️ Erro ao gerar XLSX: ' + err.message);
+                            }
+                        }, 200);
+                    }).catch(error => {
+                        fecharCarregamento();
+                        alert('⚠️ Erro ao gerar PDF: ' + error.message);
+                    });
+                } catch (error) {
+                    fecharCarregamento();
+                    alert('⚠️ Erro: ' + error.message);
+                }
+            }, 100);
+        }
+
+        // ============================================
+        // IMPRIMIR GUIA
+        // ============================================
+
+        function imprimirGuia() {
+            const pdfHtml = gerarPDF();
+            const janelaImpressao = window.open('', '', 'height=900,width=1200');
+            janelaImpressao.document.write(pdfHtml);
+            janelaImpressao.document.close();
+            janelaImpressao.print();
+        }
+    </script>
+
+
+</body>
+
+
+/* Matched Rule from user-agent */
+body {
+  display: block;
+  margin-top: 8px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  margin-left: 8px;
+}
+
+/* Matched Rule from regular */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  box-sizing: border-box;
+}
+
+/* Matched Rule from regular */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: var(--fundo-pagina);
+  color: var(--texto-primario);
+  line-height: 1.6;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-family: Montserrat, sans-serif;
+  color: var(--texto-primario);
+  line-height: 1.6;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  text-size-adjust: 100%;
+}
+
+/* Inherited from ancestor level 1 (user-agent) */
+html {
+  display: block;
+}
+
+/* Inherited from ancestor level 1 (user-agent) */
+:root {
+  view-transition-name: root;
+}
+
+/* Inherited from ancestor level 1 (regular) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  box-sizing: border-box;
+}
+
+/* Inherited from ancestor level 1 (regular) */
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Inherited from ancestor level 1 (regular) */
+:root {
+  --primario-forte: #003366;
+  --primario-claro: #004499;
+  --ouro: #d4af37;
+  --fillcolor: #f0f4f8;
+  --texto-principal: #333;
+  --texto-secundario: #666;
+  --fundo: #ffffff;
+  --borda-suave: #e0e0e0;
+  --primario-forte: #003366;
+  --primario-claro: #004499;
+  --ouro: #d4af37;
+  --fillcolor: #f0f4f8;
+  --texto-principal: #333;
+  --texto-secundario: #666;
+  --fundo: #ffffff;
+  --borda-suave: #e0e0e0;
+}
+
+/* Inherited from ancestor level 1 (regular) */
+:root {
+  --primario-muito-escuro: #051F5A;
+  --primario-escuro: #0A1127;
+  --primario-forte: #14214D;
+  --primario-medio: #4D577A;
+  --primario-claro: #7D86A6;
+  --primario-muito-claro: #ACB4D3;
+  --cinza-claro: #E9E9E9;
+  --ouro-claro: #716753;
+  --ouro: #B8860B;
+  --branco: #FFFFFF;
+  --texto-primario: #14214D;
+  --texto-secundario: #7D86A6;
+  --fundo-pagina: #F8F9FB;
+  --sombra-leve: 0 2px 8px rgba(20, 33, 77, 0.08);
+  --sombra-media: 0 4px 16px rgba(20, 33, 77, 0.12);
+  --sombra-forte: 0 8px 32px rgba(20, 33, 77, 0.15);
+  --primario-muito-escuro: #051F5A;
+  --primario-escuro: #0A1127;
+  --primario-forte: #14214D;
+  --primario-medio: #4D577A;
+  --primario-claro: #7D86A6;
+  --primario-muito-claro: #ACB4D3;
+  --cinza-claro: #E9E9E9;
+  --ouro-claro: #716753;
+  --ouro: #B8860B;
+  --branco: #FFFFFF;
+  --texto-primario: #14214D;
+  --texto-secundario: #7D86A6;
+  --fundo-pagina: #F8F9FB;
+  --sombra-leve: 0 2px 8px rgba(20, 33, 77, 0.08);
+  --sombra-media: 0 4px 16px rgba(20, 33, 77, 0.12);
+  --sombra-forte: 0 8px 32px rgba(20, 33, 77, 0.15);
+}

@@ -1,0 +1,159 @@
+# ⚡ GUIA RÁPIDO - COMO FAZER FUNCIONAR
+
+## 🎯 RESUMO EXECUTIVO
+
+Você tem 4 arquivos novos. Siga estes 6 passos para tudo funcionar:
+
+```
+1️⃣  INSTALAR NODE.JS
+2️⃣  EXECUTAR: npm install
+3️⃣  CONFIGURAR E-MAIL NO .env
+4️⃣  EXECUTAR: npm start
+5️⃣  ABRIR: http://localhost:3000
+6️⃣  TESTAR O FORMULÁRIO
+```
+
+**Tempo estimado:** 15 minutos
+
+---
+
+## 📥 PASSO 1: INSTALAR NODE.JS
+
+1. Abra: https://nodejs.org/
+2. Clique em "LTS" (versão estável)
+3. Baixe e instale
+4. **REINICIE o computador**
+5. Abra PowerShell e teste:
+   ```
+   node --version
+   npm --version
+   ```
+
+---
+
+## 🔧 PASSO 2: INSTALAR DEPENDÊNCIAS
+
+1. Abra PowerShell
+2. Navegue até a pasta:
+   ```powershell
+   cd "C:\Users\psico\Desktop\Trabalho e Estudos_2023\Nossos Sites\Royalty Families\Videos e Projetos\Projetos de Aulas ou cursos\App e Programas\Prevenção Royalty"
+   ```
+3. Execute:
+   ```powershell
+   npm install
+   ```
+4. **Espere terminar** (vai instalar ~200 MB)
+
+---
+
+## 📧 PASSO 3: CONFIGURAR E-MAIL (CRÍTICO!)
+
+### A. Habilitar 2FA no Gmail
+
+1. Abra: https://myaccount.google.com/
+2. Menu esquerdo → "Segurança"
+3. "Verificação em 2 etapas" → Ativar
+4. Siga os passos
+
+### B. Gerar Senha de App
+
+1. Volta a: https://myaccount.google.com/apppasswords
+2. Selecione: "Email" e "Windows"
+3. Clique: "Gerar"
+4. **Copie a senha** (16 caracteres)
+
+### C. Configurar .env
+
+1. Na pasta do projeto, abra: `.env`
+2. Procure a linha:
+   ```
+   EMAIL_PASSWORD=sua_senha_de_aplicativo_aqui
+   ```
+3. Substitua por:
+   ```
+   EMAIL_PASSWORD=SuaSenha16Caracteres
+   ```
+   (cole a senha gerada no passo anterior, sem espaços)
+
+4. **Salve o arquivo** (Ctrl+S)
+
+---
+
+## 🚀 PASSO 4: INICIAR O SERVIDOR
+
+1. PowerShell na pasta correta
+2. Execute:
+   ```powershell
+   npm start
+   ```
+3. Você deve ver:
+   ```
+   ✅ Servidor rodando em: http://localhost:3000
+   ```
+
+**Deixe este PowerShell aberto!**
+
+---
+
+## 🌐 PASSO 5: ABRIR A APLICAÇÃO
+
+1. Abra Chrome/Firefox/Edge
+2. Digite: `http://localhost:3000`
+3. Você verá o formulário do Guia de Prevenção
+
+---
+
+## ✅ PASSO 6: TESTAR
+
+1. Preencha o formulário (todas as 8 etapas)
+2. Na última etapa, clique: "💾 Salvar Dados"
+3. Você receberá:
+   - ✅ Mensagem de confirmação
+   - 📧 E-mail com PDF e XLSX
+   - 📂 Arquivos salvos localmente
+
+---
+
+## 🆘 PROBLEMAS?
+
+| Problema | Solução |
+|----------|---------|
+| npm não encontrado | Reinstale Node.js e reinicie |
+| "Porta já em uso" | Mude para PORT=3001 no .env |
+| E-mail não funciona | Verifique .env e 2FA do Gmail |
+| "Cannot find module" | Execute `npm install` novamente |
+
+---
+
+## 📞 PRÓXIMOS PASSOS
+
+Quando tudo estiver funcionando bem:
+
+1. **Para publicar na internet:**
+   - Use Heroku (grátis)
+   - Ou DigitalOcean ($5/mês)
+   - Ver README.md para instruções
+
+2. **Para usar com clientes:**
+   - Compartilhe a URL do servidor
+   - Cada cliente acessa a página
+   - Recebe e-mail automático com relatórios
+
+3. **Para manutença:**
+   - Logs estão em: `logs/servidor.log`
+   - Dados salvos em: `data/relatorios.json`
+   - Cópias dos uploads em: `uploads/`
+
+---
+
+## ✨ ESTÁ PRONTO!
+
+Você agora tem um sistema **100% funcional** com:
+- ✅ Formulário interativo
+- ✅ Geração automática de PDF e Excel
+- ✅ Envio por e-mail
+- ✅ Registro de logs
+- ✅ Banco de dados
+- ✅ Segurança LGPD/GDPR
+
+**Bom trabalho! 🎉**
